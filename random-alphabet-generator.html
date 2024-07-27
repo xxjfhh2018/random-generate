@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="title" content="Random Letter Generator - Generate Random Letters and Alphabets">
+  <meta name="keywords" content="random Alphabet generator">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Use our Random Letter Generator to create random letters from the alphabet. Perfect for educational games, creative projects, and quick decision-making. Generate random uppercase and lowercase letters online easily!">
+
+  <title>Random Alphabet Generator - Generate Random Letters Online</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <header class="bg-white shadow">
+
+    </header>
+    <main class="container mx-auto px-6 py-4">
+        
+<section>
+    <div class="min-h-2/3 flex items-start justify-center">
+      <div class="bg-gray-100 rounded-lg w-full max-w-lg">
+
+        <div class="px-8 pt-12  pb-12">
+          <h3 class="text-lg font-semibold mb-2">Random Alphabet generator</h3>
+          <div class="flex justify-between flex-col md:flex-row gap-2 border-black pb-8">
+            
+            <textarea id="message" rows="10" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder=""></textarea>
+
+          </div>
+        </div>
+        <label for="rangeSlider" class="text-lg ml-8">Number of Alphabet:</label>
+        <div class="flex items-center pb-8">
+            <input id="rangeSlider" type="range" min="1" max="10" value="5" class="slider w-full mr-4">
+            <input id="numberInput" type="number" min="1" max="10" value="5" class="w-20 p-1 border rounded">
+        </div>
+
+        <div class="flex flex-col gap-3 px-8 pb-8">
+            <div class="flex justify-center space-x-4">
+                <button id="reGenerator" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50" type="button">
+                    Re Generator
+                </button>
+                <button id="copy" class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50" type="button">
+                    Copy to Clipboard
+                </button>
+                <button id="clear" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50" type="button">
+                    Clear
+                </button>
+            </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+    </main>
+    <footer class="block">
+        <!-- Container -->
+        <div class="py-16 md:py-20 mx-auto w-full max-w-7xl px-5 md:px-10">
+          <!-- Component -->
+          <div class="flex-col flex items-center">
+            <a href="#" class="mb-8 inline-block max-w-full text-black">
+              <img src="images/logo.png" alt="" class="inline-block max-h-10" />
+            </a>
+            <div class="text-center font-semibold">
+              <a href="#" class="inline-block px-6 py-2 font-normal text-black transition hover:text-blue-600"> About </a>
+              <a href="#" class="inline-block px-6 py-2 font-normal text-black transition hover:text-blue-600"> Features </a>
+              <a href="#" class="inline-block px-6 py-2 font-normal text-black transition hover:text-blue-600"> Works </a>
+              <a href="#" class="inline-block px-6 py-2 font-normal text-black transition hover:text-blue-600"> Support </a>
+              <a href="#" class="inline-block px-6 py-2 font-normal text-black transition hover:text-blue-600"> Help </a>
+            </div>
+            <div class="mb-8 mt-8 border-b border-gray-300 w-48"></div>
+            <div class="mb-12 grid-cols-4 grid-flow-col grid w-full max-w-52 gap-3">
+              <a href="#" class="mx-auto flex-col flex max-w-6 items-center justify-center text-black">
+                <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a945b4ae6cf7b_Vector-1.svg" alt="" class="inline-block" />
+              </a>
+              <a href="#" class="mx-auto flex-col flex max-w-6 items-center justify-center text-black">
+                <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a945560e6cf77_Vector.svg" alt="" class="inline-block" />
+              </a>
+              <a href="#" class="mx-auto flex-col flex max-w-6 items-center justify-center text-black">
+                <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a940535e6cf7a_Vector-3.svg" alt="" class="inline-block" />
+              </a>
+              <a href="#" class="mx-auto flex-col flex max-w-6 items-center justify-center text-black">
+                <img src="https://assets.website-files.com/6458c625291a94a195e6cf3a/6458c625291a9433a9e6cf88_Vector-2.svg" alt="" class="inline-block" />
+              </a>
+            </div>
+            <p class="text-sm sm:text-base"> © Copyright 2024. All rights reserved. </p>
+          </div>
+        </div>
+    </footer>
+    <script>
+        const message = document.getElementById('message');
+        const reGenerator = document.getElementById('reGenerator');
+        const copyToClipboard = document.getElementById('copy');
+        const clear = document.getElementById('clear');
+        var n1 = 5;//生成数量
+        reGenerator.addEventListener('click', () => {
+            console.log('reGenerator clicked');
+            // message.value = generateTeam(5);
+            displayTeams();
+        });
+
+        copyToClipboard.addEventListener('click', () => {
+            message.select();
+            document.execCommand('copy');
+        });
+
+        clear.addEventListener('click', () => {
+            message.value = "";
+        });
+        // app.js
+        const alphabet = [
+        'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 
+        'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
+        'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 
+        'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'
+        ];
+
+        function generateTeam(n) {
+            if (n < 1 || n > 10) {
+                alert("Please enter a number between 1 and 10.");
+                return;
+            }
+
+            const selectedTeams = [];
+            const availableTeams = [...alphabet]; // 创建一个 nbaTeams 的副本
+
+            for (let i = 0; i < n; i++) {
+                const randomIndex = Math.floor(Math.random() * availableTeams.length);
+                const teamName = availableTeams[randomIndex];
+                selectedTeams.push(teamName);
+                availableTeams.splice(randomIndex, 1); // 从可用球队数组中移除已选中的球队
+            }
+            return selectedTeams;
+            // 
+        }    
+        
+        function displayTeams() {
+            const teams = generateTeam(n1);
+            document.getElementById('message').value = teams.join(',');
+        }
+
+       //slider 
+       const slider = document.getElementById('rangeSlider');
+       const numberInput = document.getElementById('numberInput');
+
+        function syncValues() {
+            slider.value = numberInput.value;
+        }
+
+        slider.addEventListener('input', () => {
+            numberInput.value = slider.value;
+            //numberOfTeams.value = numberInput.value;
+            n1 = numberInput.value;
+        });
+
+        numberInput.addEventListener('input', () => {
+            if (numberInput.value < 1) numberInput.value = 1;
+            if (numberInput.value > 10) numberInput.value = 10;
+            slider.value = numberInput.value;
+            //numberOfTeams.value = numberInput.value;
+            n1 = numberInput.value;
+        });
+
+        window.onload = function() {
+            displayTeams();
+        };
+
+    </script>
+</body>
+</html>
