@@ -8,6 +8,10 @@
       {
         "src": "random-generator/**/*.html",
         "use": "@vercel/static"
+      },
+      {
+        "src": "/public/images/**/*.png",
+        "use": "@vercel/static"
       }
     ]
 }
