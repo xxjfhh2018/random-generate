@@ -82,7 +82,7 @@
         
         <div class="relative inline-block text-left">
           <div>
-            <button type="button" onclick="toggleMenu()" class="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+            <button type="button" onclick="toggleMenu('header-language-menu')" class="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
               Language
               <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                 <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
@@ -90,7 +90,7 @@
             </button>
           </div>
 
-          <div id="language-menu" class="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none hidden">
+          <div id="header-language-menu" class="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none hidden">
             <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
               <a href="/en/index.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">English (英文)</a>
               <a href="/es/index.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem">Español (西班牙语)</a>
@@ -481,6 +481,34 @@ function toggleMenu() {
           </svg>
           <p class="font-inter ml-4 text-white text-left">support@randomgenerator.tools</p>
         </div>
+        <div class="flex flex-col items-start ml-4 mt-4">
+          <div class="relative inline-block text-left mt-2">
+            <div>
+              <button type="button" onclick="toggleMenu('footer-language-menu')" class="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-black text-sm font-medium text-white hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                Language
+                <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+              </button>
+            </div>
+
+            <div id="footer-language-menu" class="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-black ring-1 ring-white ring-opacity-5 focus:outline-none hidden">
+              <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
+                <a href="/en/index.html" class="block px-4 py-2 text-sm text-white hover:bg-gray-800 hover:text-white" role="menuitem">English (英文)</a>
+                <a href="/es/index.html" class="block px-4 py-2 text-sm text-white hover:bg-gray-800 hover:text-white" role="menuitem">Español (西班牙语)</a>
+                <a href="/zh-cn/index.html" class="block px-4 py-2 text-sm text-white hover:bg-gray-800 hover:text-white" role="menuitem">中文 (简体)</a>
+                <a href="/zh-tw/index.html" class="block px-4 py-2 text-sm text-white hover:bg-gray-800 hover:text-white" role="menuitem">中文 (繁体)</a>
+                <a href="/fr/index.html" class="block px-4 py-2 text-sm text-white hover:bg-gray-800 hover:text-white" role="menuitem">Français (法语)</a>
+                <a href="/de/index.html" class="block px-4 py-2 text-sm text-white hover:bg-gray-800 hover:text-white" role="menuitem">Deutsch (德语)</a>
+                <a href="/ja/index.html" class="block px-4 py-2 text-sm text-white hover:bg-gray-800 hover:text-white" role="menuitem">日本語 (日语)</a>
+                <a href="/ar/index.html" class="block px-4 py-2 text-sm text-white hover:bg-gray-800 hover:text-white" role="menuitem">العربية (阿拉伯语)</a>
+                <a href="/pt/index.html" class="block px-4 py-2 text-sm text-white hover:bg-gray-800 hover:text-white" role="menuitem">Português (葡萄牙语)</a>
+                <a href="/ko/index.html" class="block px-4 py-2 text-sm text-white hover:bg-gray-800 hover:text-white" role="menuitem">한국어 (韩语)</a>
+                <a href="/ru/index.html" class="block px-4 py-2 text-sm text-white hover:bg-gray-800 hover:text-white" role="menuitem">Русский (俄语)</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <!-- DIVIDER -->
@@ -490,12 +518,16 @@ function toggleMenu() {
       <p data-translate-id="copyright" data-translate-repeat="true" class="font-inter text-center text-sm text-gray-400 lg:mt-0"> © Copyright 2024. All rights reserved. </p>
     </div>
   </div>
-</footer>  </footer>
+</footer>
+
+
+
+  </footer>
   <script>
-  function toggleMenu() {
-    const menu = document.getElementById('language-menu');
+  function toggleMenu(menuId) {
+    const menu = document.getElementById(menuId);
     menu.classList.toggle('hidden');
   }
-</script>
+  </script>
 </body>
 </html>
