@@ -382,7 +382,7 @@ function toggleMenu() {
     </section>
 <!---q&a end----->
 <!-------------json-data-start------>
-<div id="jsonData" data-translate-id="jsonData" data-translate-repeat="false" data-json='["The only way to do great work is to love what you do. - Steve Jobs","Success is not the key to happiness. Happiness is the key to success. - Albert Schweitzer","It always seems impossible until it's done. - Nelson Mandela","You miss 100% of the shots you don't take. - Wayne Gretzky","In the end, we only regret the chances we didn't take. - Lewis Carroll","The purpose of life is not to be happy. It is to be useful, to be honorable, to be compassionate, to have it make some difference that you have lived and lived well. - Ralph Waldo Emerson","Don't watch the clock; do what it does. Keep going. - Sam Levenson","Hardships often prepare ordinary people for an extraordinary destiny. - C.S. Lewis","The best way to predict the future is to create it. - Peter Drucker","Believe you can and you're halfway there. - Theodore Roosevelt"]'></div>
+<div id="jsonData" data-translate-id="jsonData" data-translate-repeat="false" data-json="[&quot;The only way to do great work is to love what you do. - Steve Jobs&quot;,&quot;Success is not the key to happiness. Happiness is the key to success. - Albert Schweitzer&quot;,&quot;It always seems impossible until it\u0027s done. - Nelson Mandela&quot;,&quot;You miss 100% of the shots you don\u0027t take. - Wayne Gretzky&quot;,&quot;In the end, we only regret the chances we didn\u0027t take. - Lewis Carroll&quot;,&quot;The purpose of life is not to be happy. It is to be useful, to be honorable, to be compassionate, to have it make some difference that you have lived and lived well. - Ralph Waldo Emerson&quot;,&quot;Don\u0027t watch the clock; do what it does. Keep going. - Sam Levenson&quot;,&quot;Hardships often prepare ordinary people for an extraordinary destiny. - C.S. Lewis&quot;,&quot;The best way to predict the future is to create it. - Peter Drucker&quot;,&quot;Believe you can and you\u0027re halfway there. - Theodore Roosevelt&quot;]"></div>
 
 <!-------------json-data-end------>
 
@@ -524,8 +524,9 @@ function toggleMenu() {
             menu.classList.toggle('hidden');
         }
         const jsonDiv = document.getElementById('jsonData');
-
+       
         const Groups1 = JSON.parse(jsonDiv.getAttribute('data-json'));
+
         
     </script>
     <script src="/public/js/default_random_generate.js"></script>

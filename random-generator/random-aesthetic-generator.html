@@ -382,7 +382,7 @@ function toggleMenu() {
     </section>
 <!---q&a end----->
 <!-------------json-data-start------>
-<div id="jsonData" data-translate-id="jsonData" data-translate-repeat="false" data-json='["Minimalism","Bohemian","Mid-century Modern","Industrial","Scandi","Farmhouse","Art Deco","Vintage","Urban","Contemporary","Coastal","Rustic","Shabby Chic","Modern","Traditional","Eclectic","French Country","Cottage","Gothic","Victorian","Minimalist","Hygge","Futuristic","Transitional","Hollywood Regency","Zen","Maximalist","Retro","Tropical","Mediterranean","Japandi","Country","Classic","Elegant","Nordic","Zen-inspired","Contemporary Chic","Mid-century Modern Retro","Industrial Loft","Farmhouse Rustic","Scandi Hygge","French Provincial","Glamorous","Preppy","Tropical Paradise","Neo-Classical","Cottagecore","Art Nouveau"]'></div>
+<div id="jsonData" data-translate-id="jsonData" data-translate-repeat="false" data-json="[&quot;Minimalism&quot;,&quot;Bohemian&quot;,&quot;Mid-century Modern&quot;,&quot;Industrial&quot;,&quot;Scandi&quot;,&quot;Farmhouse&quot;,&quot;Art Deco&quot;,&quot;Vintage&quot;,&quot;Urban&quot;,&quot;Contemporary&quot;,&quot;Coastal&quot;,&quot;Rustic&quot;,&quot;Shabby Chic&quot;,&quot;Modern&quot;,&quot;Traditional&quot;,&quot;Eclectic&quot;,&quot;French Country&quot;,&quot;Cottage&quot;,&quot;Gothic&quot;,&quot;Victorian&quot;,&quot;Minimalist&quot;,&quot;Hygge&quot;,&quot;Futuristic&quot;,&quot;Transitional&quot;,&quot;Hollywood Regency&quot;,&quot;Zen&quot;,&quot;Maximalist&quot;,&quot;Retro&quot;,&quot;Tropical&quot;,&quot;Mediterranean&quot;,&quot;Japandi&quot;,&quot;Country&quot;,&quot;Classic&quot;,&quot;Elegant&quot;,&quot;Nordic&quot;,&quot;Zen-inspired&quot;,&quot;Contemporary Chic&quot;,&quot;Mid-century Modern Retro&quot;,&quot;Industrial Loft&quot;,&quot;Farmhouse Rustic&quot;,&quot;Scandi Hygge&quot;,&quot;French Provincial&quot;,&quot;Glamorous&quot;,&quot;Preppy&quot;,&quot;Tropical Paradise&quot;,&quot;Neo-Classical&quot;,&quot;Cottagecore&quot;,&quot;Art Nouveau&quot;]"></div>
 
 <!-------------json-data-end------>
 
@@ -524,8 +524,9 @@ function toggleMenu() {
             menu.classList.toggle('hidden');
         }
         const jsonDiv = document.getElementById('jsonData');
-
+       
         const Groups1 = JSON.parse(jsonDiv.getAttribute('data-json'));
+
         
     </script>
     <script src="/public/js/default_random_generate.js"></script>

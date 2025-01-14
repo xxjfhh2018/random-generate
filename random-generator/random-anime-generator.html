@@ -382,7 +382,7 @@ function toggleMenu() {
     </section>
 <!---q&a end----->
 <!-------------json-data-start------>
-<div id="jsonData" data-translate-id="jsonData" data-translate-repeat="false" data-json='["Dog","Cat","Horse","Cow","Pig","Sheep","Goat","Chicken","Duck","Goose","Turkey","Rabbit","Deer","Camel","Elephant","Lion","Tiger","Bear","Panda","Monkey","Giraffe","Zebra","Kangaroo","Koala","Squirrel","Mouse","Rat","Bat","Frog","Toad","Snake","Lizard","Crocodile","Alligator","Turtle","Tortoise","Dolphin","Whale","Shark","Fish","Octopus","Squid","Crab","Lobster","Shrimp","Jellyfish","Starfish","Sea Urchin","Seal","Penguin","Ostrich","Peacock","Eagle","Hawk","Falcon","Owl","Parrot","Pigeon","Sparrow","Crow","Swan","Flamingo","Woodpecker","Pelican","Seagull","Albatross","Hummingbird","Butterfly","Bee","Ant","Fly","Mosquito","Spider","Scorpion","Centipede","Millipede","Snail","Earthworm","Flea","Tick","Louse","Ladybug","Dragonfly","Grasshopper","Cricket","Beetle","Moth","Wasp","Hornet","Firefly","Cockroach","Termite","Caterpillar","Worm","Leech","Clam","Oyster","Mussel","Scallop"]'></div>
+<div id="jsonData" data-translate-id="jsonData" data-translate-repeat="false" data-json="[&quot;Dog&quot;,&quot;Cat&quot;,&quot;Horse&quot;,&quot;Cow&quot;,&quot;Pig&quot;,&quot;Sheep&quot;,&quot;Goat&quot;,&quot;Chicken&quot;,&quot;Duck&quot;,&quot;Goose&quot;,&quot;Turkey&quot;,&quot;Rabbit&quot;,&quot;Deer&quot;,&quot;Camel&quot;,&quot;Elephant&quot;,&quot;Lion&quot;,&quot;Tiger&quot;,&quot;Bear&quot;,&quot;Panda&quot;,&quot;Monkey&quot;,&quot;Giraffe&quot;,&quot;Zebra&quot;,&quot;Kangaroo&quot;,&quot;Koala&quot;,&quot;Squirrel&quot;,&quot;Mouse&quot;,&quot;Rat&quot;,&quot;Bat&quot;,&quot;Frog&quot;,&quot;Toad&quot;,&quot;Snake&quot;,&quot;Lizard&quot;,&quot;Crocodile&quot;,&quot;Alligator&quot;,&quot;Turtle&quot;,&quot;Tortoise&quot;,&quot;Dolphin&quot;,&quot;Whale&quot;,&quot;Shark&quot;,&quot;Fish&quot;,&quot;Octopus&quot;,&quot;Squid&quot;,&quot;Crab&quot;,&quot;Lobster&quot;,&quot;Shrimp&quot;,&quot;Jellyfish&quot;,&quot;Starfish&quot;,&quot;Sea Urchin&quot;,&quot;Seal&quot;,&quot;Penguin&quot;,&quot;Ostrich&quot;,&quot;Peacock&quot;,&quot;Eagle&quot;,&quot;Hawk&quot;,&quot;Falcon&quot;,&quot;Owl&quot;,&quot;Parrot&quot;,&quot;Pigeon&quot;,&quot;Sparrow&quot;,&quot;Crow&quot;,&quot;Swan&quot;,&quot;Flamingo&quot;,&quot;Woodpecker&quot;,&quot;Pelican&quot;,&quot;Seagull&quot;,&quot;Albatross&quot;,&quot;Hummingbird&quot;,&quot;Butterfly&quot;,&quot;Bee&quot;,&quot;Ant&quot;,&quot;Fly&quot;,&quot;Mosquito&quot;,&quot;Spider&quot;,&quot;Scorpion&quot;,&quot;Centipede&quot;,&quot;Millipede&quot;,&quot;Snail&quot;,&quot;Earthworm&quot;,&quot;Flea&quot;,&quot;Tick&quot;,&quot;Louse&quot;,&quot;Ladybug&quot;,&quot;Dragonfly&quot;,&quot;Grasshopper&quot;,&quot;Cricket&quot;,&quot;Beetle&quot;,&quot;Moth&quot;,&quot;Wasp&quot;,&quot;Hornet&quot;,&quot;Firefly&quot;,&quot;Cockroach&quot;,&quot;Termite&quot;,&quot;Caterpillar&quot;,&quot;Worm&quot;,&quot;Leech&quot;,&quot;Clam&quot;,&quot;Oyster&quot;,&quot;Mussel&quot;,&quot;Scallop&quot;]"></div>
 
 <!-------------json-data-end------>
 
@@ -524,8 +524,9 @@ function toggleMenu() {
             menu.classList.toggle('hidden');
         }
         const jsonDiv = document.getElementById('jsonData');
-
+       
         const Groups1 = JSON.parse(jsonDiv.getAttribute('data-json'));
+
         
     </script>
     <script src="/public/js/default_random_generate.js"></script>

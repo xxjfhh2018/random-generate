@@ -382,7 +382,7 @@ function toggleMenu() {
     </section>
 <!---q&a end----->
 <!-------------json-data-start------>
-<div id="jsonData" data-translate-id="jsonData" data-translate-repeat="false" data-json='[["United States","??"],["Canada","??"],["Mexico","??"],["Brazil","??"],["United Kingdom","??"],["Germany","??"],["France","??"],["Italy","??"],["Spain","??"],["Australia","??"],["Japan","??"],["China","??"],["India","??"],["South Korea","??"],["Russia","??"],["South Africa","??"],["Argentina","??"],["Chile","??"],["Colombia","??"],["Egypt","??"],["Saudi Arabia","??"],["Turkey","??"],["Norway","??"],["Sweden","??"],["Denmark","??"],["Finland","??"],["Netherlands","??"],["Belgium","??"],["Switzerland","??"],["Greece","??"],["Portugal","??"],["Poland","??"],["Czech Republic","??"],["Ukraine","??"],["Israel","??"],["Singapore","??"],["Thailand","??"],["Vietnam","??"],["Indonesia","??"],["Malaysia","??"],["Philippines","??"],["New Zealand","??"],["Kenya","??"],["Nigeria","??"],["Morocco","??"],["Algeria","??"]]'></div>
+<div id="jsonData" data-translate-id="jsonData" data-translate-repeat="false" data-json="[[&quot;United States&quot;,&quot;??&quot;],[&quot;Canada&quot;,&quot;??&quot;],[&quot;Mexico&quot;,&quot;??&quot;],[&quot;Brazil&quot;,&quot;??&quot;],[&quot;United Kingdom&quot;,&quot;??&quot;],[&quot;Germany&quot;,&quot;??&quot;],[&quot;France&quot;,&quot;??&quot;],[&quot;Italy&quot;,&quot;??&quot;],[&quot;Spain&quot;,&quot;??&quot;],[&quot;Australia&quot;,&quot;??&quot;],[&quot;Japan&quot;,&quot;??&quot;],[&quot;China&quot;,&quot;??&quot;],[&quot;India&quot;,&quot;??&quot;],[&quot;South Korea&quot;,&quot;??&quot;],[&quot;Russia&quot;,&quot;??&quot;],[&quot;South Africa&quot;,&quot;??&quot;],[&quot;Argentina&quot;,&quot;??&quot;],[&quot;Chile&quot;,&quot;??&quot;],[&quot;Colombia&quot;,&quot;??&quot;],[&quot;Egypt&quot;,&quot;??&quot;],[&quot;Saudi Arabia&quot;,&quot;??&quot;],[&quot;Turkey&quot;,&quot;??&quot;],[&quot;Norway&quot;,&quot;??&quot;],[&quot;Sweden&quot;,&quot;??&quot;],[&quot;Denmark&quot;,&quot;??&quot;],[&quot;Finland&quot;,&quot;??&quot;],[&quot;Netherlands&quot;,&quot;??&quot;],[&quot;Belgium&quot;,&quot;??&quot;],[&quot;Switzerland&quot;,&quot;??&quot;],[&quot;Greece&quot;,&quot;??&quot;],[&quot;Portugal&quot;,&quot;??&quot;],[&quot;Poland&quot;,&quot;??&quot;],[&quot;Czech Republic&quot;,&quot;??&quot;],[&quot;Ukraine&quot;,&quot;??&quot;],[&quot;Israel&quot;,&quot;??&quot;],[&quot;Singapore&quot;,&quot;??&quot;],[&quot;Thailand&quot;,&quot;??&quot;],[&quot;Vietnam&quot;,&quot;??&quot;],[&quot;Indonesia&quot;,&quot;??&quot;],[&quot;Malaysia&quot;,&quot;??&quot;],[&quot;Philippines&quot;,&quot;??&quot;],[&quot;New Zealand&quot;,&quot;??&quot;],[&quot;Kenya&quot;,&quot;??&quot;],[&quot;Nigeria&quot;,&quot;??&quot;],[&quot;Morocco&quot;,&quot;??&quot;],[&quot;Algeria&quot;,&quot;??&quot;]]"></div>
 
 <!-------------json-data-end------>
 
@@ -524,8 +524,9 @@ function toggleMenu() {
             menu.classList.toggle('hidden');
         }
         const jsonDiv = document.getElementById('jsonData');
-
+       
         const Groups1 = JSON.parse(jsonDiv.getAttribute('data-json'));
+
         
     </script>
     <script src="/public/js/default_random_generate.js"></script>

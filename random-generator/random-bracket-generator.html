@@ -382,7 +382,7 @@ function toggleMenu() {
     </section>
 <!---q&a end----->
 <!-------------json-data-start------>
-<div id="jsonData" data-translate-id="jsonData" data-translate-repeat="false" data-json='["Single-elimination","Double-elimination","Round-robin","Swiss system","Knockout","League format","Best of 3","Best of 5","Best of 7","Group stages","Elimination bracket","Seeded bracket","Playoffs","Championship bracket","Consolation bracket","Seeding rounds","Super bracket","Bracket of champions","First-past-the-post","Endurance tournament","Challenge bracket","Single-elim 2nd chance","Elimination by points","Loser's bracket","Winner's bracket","Upper bracket","Lower bracket","Loser's round","Winner's round","Final showdown","Grand final","Final four","Elite eight","Sweet sixteen","Round robin finals","Best of 9","Best of 11","Round 1","Quarterfinals","Semifinals","Championship round"]'></div>
+<div id="jsonData" data-translate-id="jsonData" data-translate-repeat="false" data-json="[&quot;Single-elimination&quot;,&quot;Double-elimination&quot;,&quot;Round-robin&quot;,&quot;Swiss system&quot;,&quot;Knockout&quot;,&quot;League format&quot;,&quot;Best of 3&quot;,&quot;Best of 5&quot;,&quot;Best of 7&quot;,&quot;Group stages&quot;,&quot;Elimination bracket&quot;,&quot;Seeded bracket&quot;,&quot;Playoffs&quot;,&quot;Championship bracket&quot;,&quot;Consolation bracket&quot;,&quot;Seeding rounds&quot;,&quot;Super bracket&quot;,&quot;Bracket of champions&quot;,&quot;First-past-the-post&quot;,&quot;Endurance tournament&quot;,&quot;Challenge bracket&quot;,&quot;Single-elim 2nd chance&quot;,&quot;Elimination by points&quot;,&quot;Loser\u0027s bracket&quot;,&quot;Winner\u0027s bracket&quot;,&quot;Upper bracket&quot;,&quot;Lower bracket&quot;,&quot;Loser\u0027s round&quot;,&quot;Winner\u0027s round&quot;,&quot;Final showdown&quot;,&quot;Grand final&quot;,&quot;Final four&quot;,&quot;Elite eight&quot;,&quot;Sweet sixteen&quot;,&quot;Round robin finals&quot;,&quot;Best of 9&quot;,&quot;Best of 11&quot;,&quot;Round 1&quot;,&quot;Quarterfinals&quot;,&quot;Semifinals&quot;,&quot;Championship round&quot;]"></div>
 
 <!-------------json-data-end------>
 
@@ -524,8 +524,9 @@ function toggleMenu() {
             menu.classList.toggle('hidden');
         }
         const jsonDiv = document.getElementById('jsonData');
-
+       
         const Groups1 = JSON.parse(jsonDiv.getAttribute('data-json'));
+
         
     </script>
     <script src="/public/js/default_random_generate.js"></script>

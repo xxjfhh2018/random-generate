@@ -382,7 +382,7 @@ function toggleMenu() {
     </section>
 <!---q&a end----->
 <!-------------json-data-start------>
-<div id="jsonData" data-translate-id="jsonData" data-translate-repeat="false" data-json='["The Fool","The Magician","The High Priestess","The Empress","The Emperor","The Hierophant","The Lovers","The Chariot","Strength","The Hermit","Wheel of Fortune","Justice","The Hanged Man","Death","Temperance","The Devil","The Tower","The Star","The Moon","The Sun","Judgment","The World","Ace of Wands","Two of Wands","Three of Wands","Four of Wands","Five of Wands","Six of Wands","Seven of Wands","Eight of Wands","Nine of Wands","Ten of Wands","Page of Wands","Knight of Wands","Queen of Wands","King of Wands","Ace of Cups","Two of Cups","Three of Cups","Four of Cups","Five of Cups","Six of Cups","Seven of Cups","Eight of Cups","Nine of Cups","Ten of Cups","Page of Cups","Knight of Cups","Queen of Cups","King of Cups","Ace of Swords","Two of Swords","Three of Swords","Four of Swords","Five of Swords","Six of Swords","Seven of Swords","Eight of Swords","Nine of Swords","Ten of Swords","Page of Swords","Knight of Swords","Queen of Swords","King of Swords","Ace of Pentacles","Two of Pentacles","Three of Pentacles","Four of Pentacles","Five of Pentacles","Six of Pentacles","Seven of Pentacles","Eight of Pentacles","Nine of Pentacles","Ten of Pentacles","Page of Pentacles","Knight of Pentacles","Queen of Pentacles","King of Pentacles"]'></div>
+<div id="jsonData" data-translate-id="jsonData" data-translate-repeat="false" data-json="[&quot;The Fool&quot;,&quot;The Magician&quot;,&quot;The High Priestess&quot;,&quot;The Empress&quot;,&quot;The Emperor&quot;,&quot;The Hierophant&quot;,&quot;The Lovers&quot;,&quot;The Chariot&quot;,&quot;Strength&quot;,&quot;The Hermit&quot;,&quot;Wheel of Fortune&quot;,&quot;Justice&quot;,&quot;The Hanged Man&quot;,&quot;Death&quot;,&quot;Temperance&quot;,&quot;The Devil&quot;,&quot;The Tower&quot;,&quot;The Star&quot;,&quot;The Moon&quot;,&quot;The Sun&quot;,&quot;Judgment&quot;,&quot;The World&quot;,&quot;Ace of Wands&quot;,&quot;Two of Wands&quot;,&quot;Three of Wands&quot;,&quot;Four of Wands&quot;,&quot;Five of Wands&quot;,&quot;Six of Wands&quot;,&quot;Seven of Wands&quot;,&quot;Eight of Wands&quot;,&quot;Nine of Wands&quot;,&quot;Ten of Wands&quot;,&quot;Page of Wands&quot;,&quot;Knight of Wands&quot;,&quot;Queen of Wands&quot;,&quot;King of Wands&quot;,&quot;Ace of Cups&quot;,&quot;Two of Cups&quot;,&quot;Three of Cups&quot;,&quot;Four of Cups&quot;,&quot;Five of Cups&quot;,&quot;Six of Cups&quot;,&quot;Seven of Cups&quot;,&quot;Eight of Cups&quot;,&quot;Nine of Cups&quot;,&quot;Ten of Cups&quot;,&quot;Page of Cups&quot;,&quot;Knight of Cups&quot;,&quot;Queen of Cups&quot;,&quot;King of Cups&quot;,&quot;Ace of Swords&quot;,&quot;Two of Swords&quot;,&quot;Three of Swords&quot;,&quot;Four of Swords&quot;,&quot;Five of Swords&quot;,&quot;Six of Swords&quot;,&quot;Seven of Swords&quot;,&quot;Eight of Swords&quot;,&quot;Nine of Swords&quot;,&quot;Ten of Swords&quot;,&quot;Page of Swords&quot;,&quot;Knight of Swords&quot;,&quot;Queen of Swords&quot;,&quot;King of Swords&quot;,&quot;Ace of Pentacles&quot;,&quot;Two of Pentacles&quot;,&quot;Three of Pentacles&quot;,&quot;Four of Pentacles&quot;,&quot;Five of Pentacles&quot;,&quot;Six of Pentacles&quot;,&quot;Seven of Pentacles&quot;,&quot;Eight of Pentacles&quot;,&quot;Nine of Pentacles&quot;,&quot;Ten of Pentacles&quot;,&quot;Page of Pentacles&quot;,&quot;Knight of Pentacles&quot;,&quot;Queen of Pentacles&quot;,&quot;King of Pentacles&quot;]"></div>
 
 <!-------------json-data-end------>
 
@@ -524,8 +524,9 @@ function toggleMenu() {
             menu.classList.toggle('hidden');
         }
         const jsonDiv = document.getElementById('jsonData');
-
+       
         const Groups1 = JSON.parse(jsonDiv.getAttribute('data-json'));
+
         
     </script>
     <script src="/public/js/default_random_generate.js"></script>
