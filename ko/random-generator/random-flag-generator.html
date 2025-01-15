@@ -55,13 +55,42 @@
 <a class="font-inter lg: rounded-lg pb-8 lg:px-6 lg:py-4 lg:hover:bg-gray-100 transition-colors duration-200" data-translate-id="game_generator" data-translate-repeat="true" href="https://randomgenerator.tools/ko/random-generator/random-game-generator.html">게임 생성기</a>
 <a class="font-inter lg: rounded-lg pb-8 lg:px-6 lg:py-4 lg:hover:bg-gray-100 transition-colors duration-200" data-translate-id="state_generator" data-translate-repeat="true" href="https://randomgenerator.tools/ko/random-generator/random-state-generator.html">상태 생성기</a>
 </div>
-<div class="flex flex-col space-y-8 lg:flex lg:flex-row lg:space-x-3 lg:space-y-0">
-<a class="font-inter rounded-lg bg-gray-200 px-8 py-4 text-center hover:bg-gray-800 hover:text-white" data-translate-id="sign_up" data-translate-repeat="true" href="#">가입</a>
-<a class="font-inter rounded-lg bg-green-500 px-8 py-4 text-center text-white hover:bg-gray-800" data-translate-id="login" data-translate-repeat="true" href="#">로그인</a>
+<div class="flex items-center">
+<div class="relative inline-block text-left">
+<div>
+<button class="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" onclick="toggleMenu('header-language-menu')" type="button">
+              Language
+              <svg aria-hidden="true" class="-mr-1 ml-2 h-5 w-5" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" fill-rule="evenodd"></path>
+</svg>
+</button>
+</div>
+<div class="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none hidden" id="header-language-menu">
+<div aria-labelledby="options-menu" aria-orientation="vertical" class="py-1" role="menu">
+<a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" href="/index.html" role="menuitem">English (英文)</a>
+<a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" href="/es/index.html" role="menuitem">Español (西班牙语)</a>
+<a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" href="/zh-cn/index.html" role="menuitem">中文 (简体)</a>
+<a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" href="/zh-tw/index.html" role="menuitem">中文 (繁体)</a>
+<a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" href="/fr/index.html" role="menuitem">Français (法语)</a>
+<a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" href="/de/index.html" role="menuitem">Deutsch (德语)</a>
+<a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" href="/ja/index.html" role="menuitem">日本語 (日语)</a>
+<a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" href="/ar/index.html" role="menuitem">العربية (阿拉伯语)</a>
+<a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" href="/pt/index.html" role="menuitem">Português (葡萄牙语)</a>
+<a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" href="/ko/index.html" role="menuitem">한국어 (韩语)</a>
+<a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" href="/ru/index.html" role="menuitem">Русский (俄语)</a>
+</div>
+</div>
+</div>
 </div>
 </div>
 </nav>
-</section> </header>
+</section>
+<script>
+function toggleMenu() {
+  const menu = document.getElementById('language-menu');
+  menu.classList.toggle('hidden');
+}
+</script> </header>
 <main class="container mx-auto px-6 py-4">
 <!--hero start-->
 <section>
@@ -286,7 +315,7 @@
 </section>
 <!---q&a end----->
 <!-------------json-data-start------>
-<div data="" data-json='[["United States","??"],["Canada","??"],["Mexico","??"],["Brazil","??"],["United Kingdom","??"],["Germany","??"],["France","??"],["Italy","??"],["Spain","??"],["Australia","??"],["Japan","??"],["China","??"],["India","??"],["South Korea","??"],["Russia","??"],["South Africa","??"],["Argentina","??"],["Chile","??"],["Colombia","??"],["Egypt","??"],["Saudi Arabia","??"],["Turkey","??"],["Norway","??"],["Sweden","??"],["Denmark","??"],["Finland","??"],["Netherlands","??"],["Belgium","??"],["Switzerland","??"],["Greece","??"],["Portugal","??"],["Poland","??"],["Czech Republic","??"],["Ukraine","??"],["Israel","??"],["Singapore","??"],["Thailand","??"],["Vietnam","??"],["Indonesia","??"],["Malaysia","??"],["Philippines","??"],["New Zealand","??"],["Kenya","??"],["Nigeria","??"],["Morocco","??"],["Algeria","??"]]' data-translate-id="jsonData" data-translate-repeat="false" id="jsonData">[["미국", "??"], ["캐나다", "??"], ["멕시코", "??"], ["브라질", "??"], ["영국", "??"], ["독일", "??"], ["프랑스", "??"], ["이탈리아", "??"], ["스페인", "??"], ["오스트레일리아", "??"], ["일본", "??"], ["중국", "??"], ["인도", "??"], ["대한민국", "??"], ["러시아", "??"], ["남아프리카", "??"], ["아르헨티나", "??"], ["칠레", "??"], ["콜롬비아", "??"], ["이집트", "??"], ["사우디 아라비아", "??"], ["터키", "??"], ["노르웨이", "??"], ["스웨덴", "??"], ["덴마크", "??"], ["핀란드", "??"], ["네덜란드", "??"], ["벨기에", "??"], ["스위스", "??"], ["그리스", "??"], ["포르투갈", "??"], ["폴란드", "??"], ["체코 공화국", "??"], ["우크라이나", "??"], ["이스라엘", "??"], ["싱가포르", "??"], ["태국", "??"], ["베트남", "??"], ["인도네시아", "??"], ["말레이시아", "??"], ["필리핀", "??"], ["뉴질랜드", "??"], ["케냐", "??"], ["나이지리아", "??"], ["모로코", "??"], ["알제리", "??"]]</div>
+<div data-json='[["United States","??"],["Canada","??"],["Mexico","??"],["Brazil","??"],["United Kingdom","??"],["Germany","??"],["France","??"],["Italy","??"],["Spain","??"],["Australia","??"],["Japan","??"],["China","??"],["India","??"],["South Korea","??"],["Russia","??"],["South Africa","??"],["Argentina","??"],["Chile","??"],["Colombia","??"],["Egypt","??"],["Saudi Arabia","??"],["Turkey","??"],["Norway","??"],["Sweden","??"],["Denmark","??"],["Finland","??"],["Netherlands","??"],["Belgium","??"],["Switzerland","??"],["Greece","??"],["Portugal","??"],["Poland","??"],["Czech Republic","??"],["Ukraine","??"],["Israel","??"],["Singapore","??"],["Thailand","??"],["Vietnam","??"],["Indonesia","??"],["Malaysia","??"],["Philippines","??"],["New Zealand","??"],["Kenya","??"],["Nigeria","??"],["Morocco","??"],["Algeria","??"]]' data-translate-id="jsonData" data-translate-repeat="false" id="jsonData">[["미국", "??"], ["캐나다", "??"], ["멕시코", "??"], ["브라질", "??"], ["영국", "??"], ["독일", "??"], ["프랑스", "??"], ["이탈리아", "??"], ["스페인", "??"], ["오스트레일리아", "??"], ["일본", "??"], ["중국", "??"], ["인도", "??"], ["대한민국", "??"], ["러시아", "??"], ["남아프리카", "??"], ["아르헨티나", "??"], ["칠레", "??"], ["콜롬비아", "??"], ["이집트", "??"], ["사우디 아라비아", "??"], ["터키", "??"], ["노르웨이", "??"], ["스웨덴", "??"], ["덴마크", "??"], ["핀란드", "??"], ["네덜란드", "??"], ["벨기에", "??"], ["스위스", "??"], ["그리스", "??"], ["포르투갈", "??"], ["폴란드", "??"], ["체코 공화국", "??"], ["우크라이나", "??"], ["이스라엘", "??"], ["싱가포르", "??"], ["태국", "??"], ["베트남", "??"], ["인도네시아", "??"], ["말레이시아", "??"], ["필리핀", "??"], ["뉴질랜드", "??"], ["케냐", "??"], ["나이지리아", "??"], ["모로코", "??"], ["알제리", "??"]]</div>
 <!-------------json-data-end------>
 <!---footer start----->
 </main>
@@ -377,6 +406,33 @@
 </svg>
 <p class="font-inter ml-4 text-white text-left">support@randomgenerator.tools</p>
 </div>
+<div class="flex flex-col items-start ml-4 mt-4">
+<div class="relative inline-block text-left mt-2">
+<div>
+<button class="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-black text-sm font-medium text-white hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" onclick="toggleMenu('footer-language-menu')" type="button">
+                Language
+                <svg aria-hidden="true" class="-mr-1 ml-2 h-5 w-5" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" fill-rule="evenodd"></path>
+</svg>
+</button>
+</div>
+<div class="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-black ring-1 ring-white ring-opacity-5 focus:outline-none hidden" id="footer-language-menu">
+<div aria-labelledby="options-menu" aria-orientation="vertical" class="py-1" role="menu">
+<a class="block px-4 py-2 text-sm text-white hover:bg-gray-800 hover:text-white" href="/index.html" role="menuitem">English (英文)</a>
+<a class="block px-4 py-2 text-sm text-white hover:bg-gray-800 hover:text-white" href="/es/index.html" role="menuitem">Español (西班牙语)</a>
+<a class="block px-4 py-2 text-sm text-white hover:bg-gray-800 hover:text-white" href="/zh-cn/index.html" role="menuitem">中文 (简体)</a>
+<a class="block px-4 py-2 text-sm text-white hover:bg-gray-800 hover:text-white" href="/zh-tw/index.html" role="menuitem">中文 (繁体)</a>
+<a class="block px-4 py-2 text-sm text-white hover:bg-gray-800 hover:text-white" href="/fr/index.html" role="menuitem">Français (法语)</a>
+<a class="block px-4 py-2 text-sm text-white hover:bg-gray-800 hover:text-white" href="/de/index.html" role="menuitem">Deutsch (德语)</a>
+<a class="block px-4 py-2 text-sm text-white hover:bg-gray-800 hover:text-white" href="/ja/index.html" role="menuitem">日本語 (日语)</a>
+<a class="block px-4 py-2 text-sm text-white hover:bg-gray-800 hover:text-white" href="/ar/index.html" role="menuitem">العربية (阿拉伯语)</a>
+<a class="block px-4 py-2 text-sm text-white hover:bg-gray-800 hover:text-white" href="/pt/index.html" role="menuitem">Português (葡萄牙语)</a>
+<a class="block px-4 py-2 text-sm text-white hover:bg-gray-800 hover:text-white" href="/ko/index.html" role="menuitem">한국어 (韩语)</a>
+<a class="block px-4 py-2 text-sm text-white hover:bg-gray-800 hover:text-white" href="/ru/index.html" role="menuitem">Русский (俄语)</a>
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 <!-- DIVIDER -->
@@ -386,14 +442,18 @@
 <p class="font-inter text-center text-sm text-gray-400 lg:mt-0" data-translate-id="copyright" data-translate-repeat="true">© 저작권 2024. 모든 권리 보유.</p>
 </div>
 </div>
-</footer> </footer>
+</footer>
+</footer>
 <script>
+        function toggleMenu(menuId) {
+            const menu = document.getElementById(menuId);
+            menu.classList.toggle('hidden');
+        }
+        const jsonDiv = document.getElementById('jsonData');
+       
+        const Groups1 = JSON.parse(jsonDiv.getAttribute('data-json'));
 
-       // const Groups1 = [["United States","??"],["Canada","??"],["Mexico","??"],["Brazil","??"],["United Kingdom","??"],["Germany","??"],["France","??"],["Italy","??"],["Spain","??"],["Australia","??"],["Japan","??"],["China","??"],["India","??"],["South Korea","??"],["Russia","??"],["South Africa","??"],["Argentina","??"],["Chile","??"],["Colombia","??"],["Egypt","??"],["Saudi Arabia","??"],["Turkey","??"],["Norway","??"],["Sweden","??"],["Denmark","??"],["Finland","??"],["Netherlands","??"],["Belgium","??"],["Switzerland","??"],["Greece","??"],["Portugal","??"],["Poland","??"],["Czech Republic","??"],["Ukraine","??"],["Israel","??"],["Singapore","??"],["Thailand","??"],["Vietnam","??"],["Indonesia","??"],["Malaysia","??"],["Philippines","??"],["New Zealand","??"],["Kenya","??"],["Nigeria","??"],["Morocco","??"],["Algeria","??"]];
-        var jsonDiv = document.getElementById('jsonData');
-        const Groups1  = jsonDiv.getAttribute('data-json');
-        console.log('Groups:', Groups1);
-
+        
     </script>
 <script src="/public/js/default_random_generate.js"></script>
 </footer></body>

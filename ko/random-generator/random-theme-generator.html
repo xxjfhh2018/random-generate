@@ -55,13 +55,42 @@
 <a class="font-inter lg: rounded-lg pb-8 lg:px-6 lg:py-4 lg:hover:bg-gray-100 transition-colors duration-200" data-translate-id="game_generator" data-translate-repeat="true" href="https://randomgenerator.tools/ko/random-generator/random-game-generator.html">게임 생성기</a>
 <a class="font-inter lg: rounded-lg pb-8 lg:px-6 lg:py-4 lg:hover:bg-gray-100 transition-colors duration-200" data-translate-id="state_generator" data-translate-repeat="true" href="https://randomgenerator.tools/ko/random-generator/random-state-generator.html">상태 생성기</a>
 </div>
-<div class="flex flex-col space-y-8 lg:flex lg:flex-row lg:space-x-3 lg:space-y-0">
-<a class="font-inter rounded-lg bg-gray-200 px-8 py-4 text-center hover:bg-gray-800 hover:text-white" data-translate-id="sign_up" data-translate-repeat="true" href="#">가입</a>
-<a class="font-inter rounded-lg bg-green-500 px-8 py-4 text-center text-white hover:bg-gray-800" data-translate-id="login" data-translate-repeat="true" href="#">로그인</a>
+<div class="flex items-center">
+<div class="relative inline-block text-left">
+<div>
+<button class="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" onclick="toggleMenu('header-language-menu')" type="button">
+              Language
+              <svg aria-hidden="true" class="-mr-1 ml-2 h-5 w-5" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" fill-rule="evenodd"></path>
+</svg>
+</button>
+</div>
+<div class="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none hidden" id="header-language-menu">
+<div aria-labelledby="options-menu" aria-orientation="vertical" class="py-1" role="menu">
+<a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" href="/index.html" role="menuitem">English (英文)</a>
+<a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" href="/es/index.html" role="menuitem">Español (西班牙语)</a>
+<a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" href="/zh-cn/index.html" role="menuitem">中文 (简体)</a>
+<a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" href="/zh-tw/index.html" role="menuitem">中文 (繁体)</a>
+<a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" href="/fr/index.html" role="menuitem">Français (法语)</a>
+<a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" href="/de/index.html" role="menuitem">Deutsch (德语)</a>
+<a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" href="/ja/index.html" role="menuitem">日本語 (日语)</a>
+<a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" href="/ar/index.html" role="menuitem">العربية (阿拉伯语)</a>
+<a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" href="/pt/index.html" role="menuitem">Português (葡萄牙语)</a>
+<a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" href="/ko/index.html" role="menuitem">한국어 (韩语)</a>
+<a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" href="/ru/index.html" role="menuitem">Русский (俄语)</a>
+</div>
+</div>
+</div>
 </div>
 </div>
 </nav>
-</section> </header>
+</section>
+<script>
+function toggleMenu() {
+  const menu = document.getElementById('language-menu');
+  menu.classList.toggle('hidden');
+}
+</script> </header>
 <main class="container mx-auto px-6 py-4">
 <!--hero start-->
 <section>
@@ -286,7 +315,7 @@
 </section>
 <!---q&a end----->
 <!-------------json-data-start------>
-<div data="" data-json='["Fantasy","Sci-Fi","Adventure","Mystery","Romance","Horror","Historical","Thriller","Comedy","Drama","Action","Superhero","Slice of Life","Urban","Cyberpunk","Steampunk","Gothic","Magical Realism","Dystopian","Apocalyptic","Fairy Tale","Mythological","Epic","Detective","Crime","Psychological","Political","Family","Teen Drama","Sports","Musical","Period Drama","Political Satire","Military","Travel","Western","Coming of Age","Supernatural","Fantasy Horror","Futuristic","Time Travel","Space Opera","Post-Apocalyptic","Romantic Comedy","Urban Fantasy","Alternate History","Action Adventure","Teen Romance","Science Fiction Thriller","Space Fantasy","Monster Horror","Psychological Thriller","Dark Fantasy","Steampunk Adventure","Historical Fantasy","Zombie Apocalypse","Cultural Drama","Historical Romance","Action Comedy","Epic Fantasy","Magic Adventure","Political Drama","Mythical Adventure","Murder Mystery","Time-Loop","Gritty Drama","Spy Thriller","Witchcraft","Psychic Powers","Medical Drama","Haunted House","Art Heist","Philosophical","Romantic Thriller","Historical Mystery","Spy Comedy","Detective Thriller","Heist Adventure","Hacker","Survival","Tragic Romance","Robot Uprising","Bureaucracy","Alien Invasion","Post-War","Pirates","Shapeshifting","Detective Noir","Medieval Fantasy","Virtual Reality","Space Western","Supernatural Mystery","Cursed Object","Mind-Bending","Urban Horror","Mythical Creatures","Courtroom Drama","Villain Perspective","Cult Classic","Space Exploration","Future War","Clone Wars","Artificial Intelligence","Medieval Romance","Jungle Adventure","Underwater","Psychological Drama","Spy Romance","High School Drama","Documentary","Dark Comedy"]' data-translate-id="jsonData" data-translate-repeat="false" id="jsonData">["판타지", "과학물", "모험", "미스터리", "로맨스", "호러", "역사", "스릴러", "코미디", "드라마", "액션", "슈퍼히어로", "일상", "도시", "사이버펑크", "스팀펑크", "고딕", "마법적 현실", "디스트로피아", "골향적", "동화", "신화", "서사시", "탐정", "범죄", "심리적", "정치적", "가족", "틴 드라마", "스포츠", "뮤지컬", "시대극", "정치 풍자", "군사", "여행", "서부", "성장", "초자연적", "판타지 호러", "미래적", "시간 여행", "우주 오페라", "폭풍우 이후의", "로맨틱 코미디", "도시의 판타지", "대체사적 역사", "액션 모험", "틴 로맨스", "과학물 스릴러", "우주 판타지", "괴물 호러", "심리적 스릴러", "어둠의 판타지", "스팀펑크 모험", "역사적 판타지", "좀비 아포칼립스", "문화적 드라마", "역사적 로맨스", "액션 코미디", "서사시 판타지", "정치 드라마", "신화적 모험", "살인 미스터리", "시간 순환", "현실적 드라마", "스파이 스릴러", "마녀숭배", "초능력", "의학 드라마", "유령 장소", "미술 납치", "철학적", "로맨틱 스릴러", "역사적 미스터리", "스파이 코미디", "탐정 스릴러", "강도 모험", "해커", "생존", "비극적 로맨스", "로봇 폭동", "관료주의", "외계 침공", "전쟁 이후", "해적", "모양변환", "탐정 누아르", "중세 판타지", "가상 현실", "우주 서부", "초자연적 미스터리", "저주받은 물건", "마음을 흔드는", "도시 호러", "신화적 생물", "법정 드라마", "악당 관점", "종교적 고전", "우주 탐험", "미래 전쟁", "클론 전쟁", "인공지능", "중세 로맨스", "정글 모험", "수중", "심리적 드라마", "스파이 로맨스", "고등 학교 드라마", "다큐멘터리", "암흑 코미디"]</div>
+<div data-json='["Fantasy","Sci-Fi","Adventure","Mystery","Romance","Horror","Historical","Thriller","Comedy","Drama","Action","Superhero","Slice of Life","Urban","Cyberpunk","Steampunk","Gothic","Magical Realism","Dystopian","Apocalyptic","Fairy Tale","Mythological","Epic","Detective","Crime","Psychological","Political","Family","Teen Drama","Sports","Musical","Period Drama","Political Satire","Military","Travel","Western","Coming of Age","Supernatural","Fantasy Horror","Futuristic","Time Travel","Space Opera","Post-Apocalyptic","Romantic Comedy","Urban Fantasy","Alternate History","Action Adventure","Teen Romance","Science Fiction Thriller","Space Fantasy","Monster Horror","Psychological Thriller","Dark Fantasy","Steampunk Adventure","Historical Fantasy","Zombie Apocalypse","Cultural Drama","Historical Romance","Action Comedy","Epic Fantasy","Magic Adventure","Political Drama","Mythical Adventure","Murder Mystery","Time-Loop","Gritty Drama","Spy Thriller","Witchcraft","Psychic Powers","Medical Drama","Haunted House","Art Heist","Philosophical","Romantic Thriller","Historical Mystery","Spy Comedy","Detective Thriller","Heist Adventure","Hacker","Survival","Tragic Romance","Robot Uprising","Bureaucracy","Alien Invasion","Post-War","Pirates","Shapeshifting","Detective Noir","Medieval Fantasy","Virtual Reality","Space Western","Supernatural Mystery","Cursed Object","Mind-Bending","Urban Horror","Mythical Creatures","Courtroom Drama","Villain Perspective","Cult Classic","Space Exploration","Future War","Clone Wars","Artificial Intelligence","Medieval Romance","Jungle Adventure","Underwater","Psychological Drama","Spy Romance","High School Drama","Documentary","Dark Comedy"]' data-translate-id="jsonData" data-translate-repeat="false" id="jsonData">["판타지", "과학물", "모험", "미스터리", "로맨스", "호러", "역사", "스릴러", "코미디", "드라마", "액션", "슈퍼히어로", "일상", "도시", "사이버펑크", "스팀펑크", "고딕", "마법적 현실", "디스트로피아", "골향적", "동화", "신화", "서사시", "탐정", "범죄", "심리적", "정치적", "가족", "틴 드라마", "스포츠", "뮤지컬", "시대극", "정치 풍자", "군사", "여행", "서부", "성장", "초자연적", "판타지 호러", "미래적", "시간 여행", "우주 오페라", "폭풍우 이후의", "로맨틱 코미디", "도시의 판타지", "대체사적 역사", "액션 모험", "틴 로맨스", "과학물 스릴러", "우주 판타지", "괴물 호러", "심리적 스릴러", "어둠의 판타지", "스팀펑크 모험", "역사적 판타지", "좀비 아포칼립스", "문화적 드라마", "역사적 로맨스", "액션 코미디", "서사시 판타지", "정치 드라마", "신화적 모험", "살인 미스터리", "시간 순환", "현실적 드라마", "스파이 스릴러", "마녀숭배", "초능력", "의학 드라마", "유령 장소", "미술 납치", "철학적", "로맨틱 스릴러", "역사적 미스터리", "스파이 코미디", "탐정 스릴러", "강도 모험", "해커", "생존", "비극적 로맨스", "로봇 폭동", "관료주의", "외계 침공", "전쟁 이후", "해적", "모양변환", "탐정 누아르", "중세 판타지", "가상 현실", "우주 서부", "초자연적 미스터리", "저주받은 물건", "마음을 흔드는", "도시 호러", "신화적 생물", "법정 드라마", "악당 관점", "종교적 고전", "우주 탐험", "미래 전쟁", "클론 전쟁", "인공지능", "중세 로맨스", "정글 모험", "수중", "심리적 드라마", "스파이 로맨스", "고등 학교 드라마", "다큐멘터리", "암흑 코미디"]</div>
 <!-------------json-data-end------>
 <!---footer start----->
 </main>
@@ -377,6 +406,33 @@
 </svg>
 <p class="font-inter ml-4 text-white text-left">support@randomgenerator.tools</p>
 </div>
+<div class="flex flex-col items-start ml-4 mt-4">
+<div class="relative inline-block text-left mt-2">
+<div>
+<button class="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-black text-sm font-medium text-white hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" onclick="toggleMenu('footer-language-menu')" type="button">
+                Language
+                <svg aria-hidden="true" class="-mr-1 ml-2 h-5 w-5" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" fill-rule="evenodd"></path>
+</svg>
+</button>
+</div>
+<div class="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-black ring-1 ring-white ring-opacity-5 focus:outline-none hidden" id="footer-language-menu">
+<div aria-labelledby="options-menu" aria-orientation="vertical" class="py-1" role="menu">
+<a class="block px-4 py-2 text-sm text-white hover:bg-gray-800 hover:text-white" href="/index.html" role="menuitem">English (英文)</a>
+<a class="block px-4 py-2 text-sm text-white hover:bg-gray-800 hover:text-white" href="/es/index.html" role="menuitem">Español (西班牙语)</a>
+<a class="block px-4 py-2 text-sm text-white hover:bg-gray-800 hover:text-white" href="/zh-cn/index.html" role="menuitem">中文 (简体)</a>
+<a class="block px-4 py-2 text-sm text-white hover:bg-gray-800 hover:text-white" href="/zh-tw/index.html" role="menuitem">中文 (繁体)</a>
+<a class="block px-4 py-2 text-sm text-white hover:bg-gray-800 hover:text-white" href="/fr/index.html" role="menuitem">Français (法语)</a>
+<a class="block px-4 py-2 text-sm text-white hover:bg-gray-800 hover:text-white" href="/de/index.html" role="menuitem">Deutsch (德语)</a>
+<a class="block px-4 py-2 text-sm text-white hover:bg-gray-800 hover:text-white" href="/ja/index.html" role="menuitem">日本語 (日语)</a>
+<a class="block px-4 py-2 text-sm text-white hover:bg-gray-800 hover:text-white" href="/ar/index.html" role="menuitem">العربية (阿拉伯语)</a>
+<a class="block px-4 py-2 text-sm text-white hover:bg-gray-800 hover:text-white" href="/pt/index.html" role="menuitem">Português (葡萄牙语)</a>
+<a class="block px-4 py-2 text-sm text-white hover:bg-gray-800 hover:text-white" href="/ko/index.html" role="menuitem">한국어 (韩语)</a>
+<a class="block px-4 py-2 text-sm text-white hover:bg-gray-800 hover:text-white" href="/ru/index.html" role="menuitem">Русский (俄语)</a>
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 <!-- DIVIDER -->
@@ -386,14 +442,18 @@
 <p class="font-inter text-center text-sm text-gray-400 lg:mt-0" data-translate-id="copyright" data-translate-repeat="true">© 저작권 2024. 모든 권리 보유.</p>
 </div>
 </div>
-</footer> </footer>
+</footer>
+</footer>
 <script>
+        function toggleMenu(menuId) {
+            const menu = document.getElementById(menuId);
+            menu.classList.toggle('hidden');
+        }
+        const jsonDiv = document.getElementById('jsonData');
+       
+        const Groups1 = JSON.parse(jsonDiv.getAttribute('data-json'));
 
-       // const Groups1 = ["Fantasy","Sci-Fi","Adventure","Mystery","Romance","Horror","Historical","Thriller","Comedy","Drama","Action","Superhero","Slice of Life","Urban","Cyberpunk","Steampunk","Gothic","Magical Realism","Dystopian","Apocalyptic","Fairy Tale","Mythological","Epic","Detective","Crime","Psychological","Political","Family","Teen Drama","Sports","Musical","Period Drama","Political Satire","Military","Travel","Western","Coming of Age","Supernatural","Fantasy Horror","Futuristic","Time Travel","Space Opera","Post-Apocalyptic","Romantic Comedy","Urban Fantasy","Alternate History","Action Adventure","Teen Romance","Science Fiction Thriller","Space Fantasy","Monster Horror","Psychological Thriller","Dark Fantasy","Steampunk Adventure","Historical Fantasy","Zombie Apocalypse","Cultural Drama","Historical Romance","Action Comedy","Epic Fantasy","Magic Adventure","Political Drama","Mythical Adventure","Murder Mystery","Time-Loop","Gritty Drama","Spy Thriller","Witchcraft","Psychic Powers","Medical Drama","Haunted House","Art Heist","Philosophical","Romantic Thriller","Historical Mystery","Spy Comedy","Detective Thriller","Heist Adventure","Hacker","Survival","Tragic Romance","Robot Uprising","Bureaucracy","Alien Invasion","Post-War","Pirates","Shapeshifting","Detective Noir","Medieval Fantasy","Virtual Reality","Space Western","Supernatural Mystery","Cursed Object","Mind-Bending","Urban Horror","Mythical Creatures","Courtroom Drama","Villain Perspective","Cult Classic","Space Exploration","Future War","Clone Wars","Artificial Intelligence","Medieval Romance","Jungle Adventure","Underwater","Psychological Drama","Spy Romance","High School Drama","Documentary","Dark Comedy"];
-        var jsonDiv = document.getElementById('jsonData');
-        const Groups1  = jsonDiv.getAttribute('data-json');
-        console.log('Groups:', Groups1);
-
+        
     </script>
 <script src="/public/js/default_random_generate.js"></script>
 </footer></body>

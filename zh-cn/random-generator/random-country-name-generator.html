@@ -55,13 +55,42 @@
 <a class="font-inter lg: rounded-lg pb-8 lg:px-6 lg:py-4 lg:hover:bg-gray-100 transition-colors duration-200" data-translate-id="game_generator" data-translate-repeat="true" href="https://randomgenerator.tools/zh-cn/random-generator/random-game-generator.html">游戏生成器</a>
 <a class="font-inter lg: rounded-lg pb-8 lg:px-6 lg:py-4 lg:hover:bg-gray-100 transition-colors duration-200" data-translate-id="state_generator" data-translate-repeat="true" href="https://randomgenerator.tools/zh-cn/random-generator/random-state-generator.html">状态发生器</a>
 </div>
-<div class="flex flex-col space-y-8 lg:flex lg:flex-row lg:space-x-3 lg:space-y-0">
-<a class="font-inter rounded-lg bg-gray-200 px-8 py-4 text-center hover:bg-gray-800 hover:text-white" data-translate-id="sign_up" data-translate-repeat="true" href="#">报名</a>
-<a class="font-inter rounded-lg bg-green-500 px-8 py-4 text-center text-white hover:bg-gray-800" data-translate-id="login" data-translate-repeat="true" href="#">登录</a>
+<div class="flex items-center">
+<div class="relative inline-block text-left">
+<div>
+<button class="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" onclick="toggleMenu('header-language-menu')" type="button">
+              Language
+              <svg aria-hidden="true" class="-mr-1 ml-2 h-5 w-5" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" fill-rule="evenodd"></path>
+</svg>
+</button>
+</div>
+<div class="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none hidden" id="header-language-menu">
+<div aria-labelledby="options-menu" aria-orientation="vertical" class="py-1" role="menu">
+<a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" href="/index.html" role="menuitem">English (英文)</a>
+<a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" href="/es/index.html" role="menuitem">Español (西班牙语)</a>
+<a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" href="/zh-cn/index.html" role="menuitem">中文 (简体)</a>
+<a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" href="/zh-tw/index.html" role="menuitem">中文 (繁体)</a>
+<a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" href="/fr/index.html" role="menuitem">Français (法语)</a>
+<a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" href="/de/index.html" role="menuitem">Deutsch (德语)</a>
+<a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" href="/ja/index.html" role="menuitem">日本語 (日语)</a>
+<a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" href="/ar/index.html" role="menuitem">العربية (阿拉伯语)</a>
+<a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" href="/pt/index.html" role="menuitem">Português (葡萄牙语)</a>
+<a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" href="/ko/index.html" role="menuitem">한국어 (韩语)</a>
+<a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" href="/ru/index.html" role="menuitem">Русский (俄语)</a>
+</div>
+</div>
+</div>
 </div>
 </div>
 </nav>
-</section> </header>
+</section>
+<script>
+function toggleMenu() {
+  const menu = document.getElementById('language-menu');
+  menu.classList.toggle('hidden');
+}
+</script> </header>
 <main class="container mx-auto px-6 py-4">
 <!--hero start-->
 <section>
@@ -247,31 +276,31 @@
 <div class="grid gap-5 sm:grid-cols-2 md:grid-cols-3 md:gap-4 lg:gap-6">
 <div class="grid gap-4 rounded-md border border-solid border-gray-200 p-6">
 <div class="flex items-start">
-<div class="text-[#9B59B6]"><svg class="h-12 w-12" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 10V3L4 14h7v7l9-11h-7z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></div>
+<div class="text-[#E74C3C]"><svg class="h-12 w-12" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></div>
 </div>
 <p class="text-sm text-gray-600 text-left" data-translate-id="features_content_1" data-translate-repeat="false">包括所有公认的国家</p>
 </div>
 <div class="grid gap-4 rounded-md border border-solid border-gray-200 p-6">
 <div class="flex items-start">
-<div class="text-[#2ECC71]"><svg class="h-12 w-12" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></div>
+<div class="text-[#1ABC9C]"><svg enable-background="new 0 0 24 24" fill="#5985E1" height="48px" viewbox="0 0 24 24" width="48px" xmlns="http://www.w3.org/2000/svg"><g><rect fill="none" height="24" width="24"></rect></g><g><g><g><path d="M2.5,19h19v2h-19V19z M22.07,9.64c-0.21-0.8-1.04-1.28-1.84-1.06L14.92,10l-6.9-6.43L6.09,4.08l4.14,7.17l-4.97,1.33 l-1.97-1.54l-1.45,0.39l2.59,4.49c0,0,7.12-1.9,16.57-4.43C21.81,11.26,22.28,10.44,22.07,9.64z"></path></g></g></g></svg></div>
 </div>
 <p class="text-sm text-gray-600 text-left" data-translate-id="features_content_2" data-translate-repeat="false">即时且准确的结果</p>
 </div>
 <div class="grid gap-4 rounded-md border border-solid border-gray-200 p-6">
 <div class="flex items-start">
-<div class="text-[#34495E]"><svg fill="#5985E1" height="48px" viewbox="0 0 24 24" width="48px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M20 6h-2.18c.11-.31.18-.65.18-1 0-1.66-1.34-3-3-3-1.05 0-1.96.54-2.5 1.35l-.5.67-.5-.68C10.96 2.54 10.05 2 9 2 7.34 2 6 3.34 6 5c0 .35.07.69.18 1H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-5-2c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zM9 4c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm11 15H4v-2h16v2zm0-5H4V8h5.08L7 10.83 8.62 12 11 8.76l1-1.36 1 1.36L15.38 12 17 10.83 14.92 8H20v6z"></path></svg></div>
+<div class="text-[#F39C12]"><svg fill="#5985E1" height="48px" viewbox="0 0 24 24" width="48px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M20 6h-2.18c.11-.31.18-.65.18-1 0-1.66-1.34-3-3-3-1.05 0-1.96.54-2.5 1.35l-.5.67-.5-.68C10.96 2.54 10.05 2 9 2 7.34 2 6 3.34 6 5c0 .35.07.69.18 1H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-5-2c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zM9 4c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm11 15H4v-2h16v2zm0-5H4V8h5.08L7 10.83 8.62 12 11 8.76l1-1.36 1 1.36L15.38 12 17 10.83 14.92 8H20v6z"></path></svg></div>
 </div>
 <p class="text-sm text-gray-600 text-left" data-translate-id="features_content_3" data-translate-repeat="false">易于使用的界面</p>
 </div>
 <div class="grid gap-4 rounded-md border border-solid border-gray-200 p-6">
 <div class="flex items-start">
-<div class="text-[#E74C3C]"><svg enable-background="new 0 0 24 24" fill="#5985E1" height="48px" viewbox="0 0 24 24" width="48px" xmlns="http://www.w3.org/2000/svg"><g><rect fill="none" height="24" width="24"></rect></g><g><g><g><path d="M2.5,19h19v2h-19V19z M22.07,9.64c-0.21-0.8-1.04-1.28-1.84-1.06L14.92,10l-6.9-6.43L6.09,4.08l4.14,7.17l-4.97,1.33 l-1.97-1.54l-1.45,0.39l2.59,4.49c0,0,7.12-1.9,16.57-4.43C21.81,11.26,22.28,10.44,22.07,9.64z"></path></g></g></g></svg></div>
+<div class="text-[#2ECC71]"><svg fill="#5985E1" height="48px" viewbox="0 0 24 24" width="48px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M3 3h8v8H3zm10 0h8v8h-8zM3 13h8v8H3zm15 0h-2v3h-3v2h3v3h2v-3h3v-2h-3z"></path></svg></div>
 </div>
 <p class="text-sm text-gray-600 text-left" data-translate-id="features_content_4" data-translate-repeat="false">学习和测验的乐趣</p>
 </div>
 <div class="grid gap-4 rounded-md border border-solid border-gray-200 p-6">
 <div class="flex items-start">
-<div class="text-[#F39C12]"><svg fill="#5985E1" height="48px" viewbox="0 0 24 24" width="48px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M3 3h8v8H3zm10 0h8v8h-8zM3 13h8v8H3zm15 0h-2v3h-3v2h3v3h2v-3h3v-2h-3z"></path></svg></div>
+<div class="text-[#9B59B6]"><svg class="h-12 w-12" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 10V3L4 14h7v7l9-11h-7z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></div>
 </div>
 <p class="text-sm text-gray-600 text-left" data-translate-id="features_content_5" data-translate-repeat="false">移动和桌面兼容</p>
 </div>
@@ -316,7 +345,7 @@
 </section>
 <!---q&a end----->
 <!-------------json-data-start------>
-<div data="" data-json='["Afghanistan","Albania","Algeria","Andorra","Angola","Antigua and Barbuda","Argentina","Armenia","Australia","Austria","Azerbaijan","Bahamas","Bahrain","Bangladesh","Barbados","Belarus","Belgium","Belize","Benin","Bhutan","Bolivia","Bosnia and Herzegovina","Botswana","Brazil","Brunei","Bulgaria","Burkina Faso","Burundi","Cabo Verde","Cambodia","Cameroon","Canada","Central African Republic","Chad","Chile","China","Colombia","Comoros","Congo","Costa Rica","Croatia","Cuba","Cyprus","Czech Republic","Denmark","Djibouti","Dominica","Dominican Republic","Ecuador","Egypt","El Salvador","Equatorial Guinea","Eritrea","Estonia","Eswatini","Ethiopia","Fiji","Finland","France","Gabon","Gambia","Georgia","Germany","Ghana","Greece","Grenada","Guatemala","Guinea","Guinea-Bissau","Guyana","Haiti","Honduras","Hungary","Iceland","India","Indonesia","Iran","Iraq","Ireland","Israel","Italy","Jamaica","Japan","Jordan","Kazakhstan","Kenya","Kiribati","Korea, North","Korea, South","Kuwait","Kyrgyzstan","Laos","Latvia","Lebanon","Lesotho","Liberia","Libya","Liechtenstein","Lithuania","Luxembourg","Madagascar","Malawi","Malaysia","Maldives","Mali","Malta","Marshall Islands","Mauritania","Mauritius","Mexico","Micronesia","Moldova","Monaco","Mongolia","Montenegro","Morocco","Mozambique","Myanmar","Namibia","Nauru","Nepal","Netherlands","New Zealand","Nicaragua","Niger","Nigeria","North Macedonia","Norway","Oman","Pakistan","Palau","Panama","Papua New Guinea","Paraguay","Peru","Philippines","Poland","Portugal","Qatar","Romania","Russia","Rwanda","Saint Kitts and Nevis","Saint Lucia","Saint Vincent and the Grenadines","Samoa","San Marino","Sao Tome and Principe","Saudi Arabia","Senegal","Serbia","Seychelles","Sierra Leone","Singapore","Slovakia","Slovenia","Solomon Islands","Somalia","South Africa","South Sudan","Spain","Sri Lanka","Sudan","Suriname","Sweden","Switzerland","Syria","Taiwan","Tajikistan","Tanzania","Thailand","Timor-Leste","Togo","Tonga","Trinidad and Tobago","Tunisia","Turkey","Turkmenistan","Tuvalu","Uganda","Ukraine","United Arab Emirates","United Kingdom","United States","Uruguay","Uzbekistan","Vanuatu","Vatican City","Venezuela","Vietnam","Yemen","Zambia","Zimbabwe"]' data-translate-id="jsonData" data-translate-repeat="false" id="jsonData">["阿富汗", "阿尔巴尼亚", "阿尔及利亚", "安道尔", "安哥拉", "安提瓜和巴布达", "阿根廷", "亚美尼亚", "澳大利亚", "奥地利", "阿塞拜疆", "巴哈马", "巴林", "孟加拉国", "巴巴多斯", "白俄罗斯", "比利时", "伯利兹", "贝宁", "不丹", "玻利维亚", "波斯尼亚和黑塞哥维那", "博茨瓦纳", "巴西", "文莱", "保加利亚", "布基纳法索", "布隆迪", "佛得角", "柬埔寨", "喀麦隆", "加拿大", "中非共和国", "乍得", "智利", "中国", "哥伦比亚", "科摩罗", "刚果", "哥斯达黎加", "克罗地亚", "古巴", "塞浦路斯", "捷克共和国", "丹麦", "吉布提", "多米尼克", "多米尼加共和国", "厄瓜多尔", "埃及", "萨尔瓦多", "赤道几内亚", "厄立特里亚", "爱沙尼亚", "埃斯瓦蒂尼", "埃塞俄比亚", "斐济", "芬兰", "法国", "加蓬", "冈比亚", "格鲁吉亚", "德国", "加纳", "希腊", "格林纳达", "危地马拉", "几内亚", "几内亚比绍", "圭亚那", "海地", "洪都拉斯", "匈牙利", "冰岛", "印度", "印度尼西亚", "伊朗", "伊拉克", "爱尔兰", "以色列", "意大利", "牙买加", "日本", "约旦", "哈萨克斯坦", "肯尼亚", "基里巴斯", "朝鲜", "韩国", "科威特", "吉尔吉斯斯坦", "老挝", "拉脱维亚", "黎巴嫩", "莱索托", "利比里亚", "利比亚", "列支敦士登", "立陶宛", "卢森堡", "马达加斯加", "马拉维", "马来西亚", "马尔代夫", "马里", "马耳他", "马绍尔群岛", "毛里塔尼亚", "毛里求斯", "墨西哥", "密克罗尼西亚", "摩尔多瓦", "摩纳哥", "蒙古", "黑山", "摩洛哥", "莫桑比克", "缅甸", "纳米比亚", "瑙鲁", "尼泊尔", "荷兰", "新西兰", "尼加拉瓜", "尼日尔", "尼日利亚", "北马其顿", "挪威", "阿曼", "巴基斯坦", "帕劳", "巴拿马", "巴布亚新几内亚", "巴拉圭", "秘鲁", "菲律宾", "波兰", "葡萄牙", "卡塔尔", "罗马尼亚", "俄罗斯", "卢旺达", "圣基茨和尼维斯", "圣卢西亚", "圣文森特和格林纳丁斯", "萨摩亚", "圣马力诺", "圣多美和普林西比", "沙特阿拉伯", "塞内加尔", "塞尔维亚", "塞舌尔", "塞拉利昂", "新加坡", "斯洛伐克", "斯洛文尼亚", "所罗门群岛", "索马里", "南非", "南苏丹", "西班牙", "斯里兰卡", "苏丹", "苏里南", "瑞典", "瑞士", "叙利亚", "台湾", "塔吉克斯坦", "坦桑尼亚", "泰国", "东帝汶", "多哥", "汤加", "特立尼达和多巴哥", "突尼斯", "土耳其", "土库曼斯坦", "图瓦卢", "乌干达", "乌克兰", "阿拉伯联合酋长国", "英国", "美国", "乌拉圭", "乌兹别克斯坦", "瓦努阿图", "梵蒂冈城", "委内瑞拉", "越南", "也门", "赞比亚", "津巴布韦"]</div>
+<div data-json='["Afghanistan","Albania","Algeria","Andorra","Angola","Antigua and Barbuda","Argentina","Armenia","Australia","Austria","Azerbaijan","Bahamas","Bahrain","Bangladesh","Barbados","Belarus","Belgium","Belize","Benin","Bhutan","Bolivia","Bosnia and Herzegovina","Botswana","Brazil","Brunei","Bulgaria","Burkina Faso","Burundi","Cabo Verde","Cambodia","Cameroon","Canada","Central African Republic","Chad","Chile","China","Colombia","Comoros","Congo","Costa Rica","Croatia","Cuba","Cyprus","Czech Republic","Denmark","Djibouti","Dominica","Dominican Republic","Ecuador","Egypt","El Salvador","Equatorial Guinea","Eritrea","Estonia","Eswatini","Ethiopia","Fiji","Finland","France","Gabon","Gambia","Georgia","Germany","Ghana","Greece","Grenada","Guatemala","Guinea","Guinea-Bissau","Guyana","Haiti","Honduras","Hungary","Iceland","India","Indonesia","Iran","Iraq","Ireland","Israel","Italy","Jamaica","Japan","Jordan","Kazakhstan","Kenya","Kiribati","Korea, North","Korea, South","Kuwait","Kyrgyzstan","Laos","Latvia","Lebanon","Lesotho","Liberia","Libya","Liechtenstein","Lithuania","Luxembourg","Madagascar","Malawi","Malaysia","Maldives","Mali","Malta","Marshall Islands","Mauritania","Mauritius","Mexico","Micronesia","Moldova","Monaco","Mongolia","Montenegro","Morocco","Mozambique","Myanmar","Namibia","Nauru","Nepal","Netherlands","New Zealand","Nicaragua","Niger","Nigeria","North Macedonia","Norway","Oman","Pakistan","Palau","Panama","Papua New Guinea","Paraguay","Peru","Philippines","Poland","Portugal","Qatar","Romania","Russia","Rwanda","Saint Kitts and Nevis","Saint Lucia","Saint Vincent and the Grenadines","Samoa","San Marino","Sao Tome and Principe","Saudi Arabia","Senegal","Serbia","Seychelles","Sierra Leone","Singapore","Slovakia","Slovenia","Solomon Islands","Somalia","South Africa","South Sudan","Spain","Sri Lanka","Sudan","Suriname","Sweden","Switzerland","Syria","Taiwan","Tajikistan","Tanzania","Thailand","Timor-Leste","Togo","Tonga","Trinidad and Tobago","Tunisia","Turkey","Turkmenistan","Tuvalu","Uganda","Ukraine","United Arab Emirates","United Kingdom","United States","Uruguay","Uzbekistan","Vanuatu","Vatican City","Venezuela","Vietnam","Yemen","Zambia","Zimbabwe"]' data-translate-id="jsonData" data-translate-repeat="false" id="jsonData">["阿富汗", "阿尔巴尼亚", "阿尔及利亚", "安道尔", "安哥拉", "安提瓜和巴布达", "阿根廷", "亚美尼亚", "澳大利亚", "奥地利", "阿塞拜疆", "巴哈马", "巴林", "孟加拉国", "巴巴多斯", "白俄罗斯", "比利时", "伯利兹", "贝宁", "不丹", "玻利维亚", "波斯尼亚和黑塞哥维那", "博茨瓦纳", "巴西", "文莱", "保加利亚", "布基纳法索", "布隆迪", "佛得角", "柬埔寨", "喀麦隆", "加拿大", "中非共和国", "乍得", "智利", "中国", "哥伦比亚", "科摩罗", "刚果", "哥斯达黎加", "克罗地亚", "古巴", "塞浦路斯", "捷克共和国", "丹麦", "吉布提", "多米尼克", "多米尼加共和国", "厄瓜多尔", "埃及", "萨尔瓦多", "赤道几内亚", "厄立特里亚", "爱沙尼亚", "埃斯瓦蒂尼", "埃塞俄比亚", "斐济", "芬兰", "法国", "加蓬", "冈比亚", "格鲁吉亚", "德国", "加纳", "希腊", "格林纳达", "危地马拉", "几内亚", "几内亚比绍", "圭亚那", "海地", "洪都拉斯", "匈牙利", "冰岛", "印度", "印度尼西亚", "伊朗", "伊拉克", "爱尔兰", "以色列", "意大利", "牙买加", "日本", "约旦", "哈萨克斯坦", "肯尼亚", "基里巴斯", "朝鲜", "韩国", "科威特", "吉尔吉斯斯坦", "老挝", "拉脱维亚", "黎巴嫩", "莱索托", "利比里亚", "利比亚", "列支敦士登", "立陶宛", "卢森堡", "马达加斯加", "马拉维", "马来西亚", "马尔代夫", "马里", "马耳他", "马绍尔群岛", "毛里塔尼亚", "毛里求斯", "墨西哥", "密克罗尼西亚", "摩尔多瓦", "摩纳哥", "蒙古", "黑山", "摩洛哥", "莫桑比克", "缅甸", "纳米比亚", "瑙鲁", "尼泊尔", "荷兰", "新西兰", "尼加拉瓜", "尼日尔", "尼日利亚", "北马其顿", "挪威", "阿曼", "巴基斯坦", "帕劳", "巴拿马", "巴布亚新几内亚", "巴拉圭", "秘鲁", "菲律宾", "波兰", "葡萄牙", "卡塔尔", "罗马尼亚", "俄罗斯", "卢旺达", "圣基茨和尼维斯", "圣卢西亚", "圣文森特和格林纳丁斯", "萨摩亚", "圣马力诺", "圣多美和普林西比", "沙特阿拉伯", "塞内加尔", "塞尔维亚", "塞舌尔", "塞拉利昂", "新加坡", "斯洛伐克", "斯洛文尼亚", "所罗门群岛", "索马里", "南非", "南苏丹", "西班牙", "斯里兰卡", "苏丹", "苏里南", "瑞典", "瑞士", "叙利亚", "台湾", "塔吉克斯坦", "坦桑尼亚", "泰国", "东帝汶", "多哥", "汤加", "特立尼达和多巴哥", "突尼斯", "土耳其", "土库曼斯坦", "图瓦卢", "乌干达", "乌克兰", "阿拉伯联合酋长国", "英国", "美国", "乌拉圭", "乌兹别克斯坦", "瓦努阿图", "梵蒂冈城", "委内瑞拉", "越南", "也门", "赞比亚", "津巴布韦"]</div>
 <!-------------json-data-end------>
 <!---footer start----->
 </main>
@@ -407,6 +436,33 @@
 </svg>
 <p class="font-inter ml-4 text-white text-left">support@randomgenerator.tools</p>
 </div>
+<div class="flex flex-col items-start ml-4 mt-4">
+<div class="relative inline-block text-left mt-2">
+<div>
+<button class="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-black text-sm font-medium text-white hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" onclick="toggleMenu('footer-language-menu')" type="button">
+                Language
+                <svg aria-hidden="true" class="-mr-1 ml-2 h-5 w-5" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" fill-rule="evenodd"></path>
+</svg>
+</button>
+</div>
+<div class="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-black ring-1 ring-white ring-opacity-5 focus:outline-none hidden" id="footer-language-menu">
+<div aria-labelledby="options-menu" aria-orientation="vertical" class="py-1" role="menu">
+<a class="block px-4 py-2 text-sm text-white hover:bg-gray-800 hover:text-white" href="/index.html" role="menuitem">English (英文)</a>
+<a class="block px-4 py-2 text-sm text-white hover:bg-gray-800 hover:text-white" href="/es/index.html" role="menuitem">Español (西班牙语)</a>
+<a class="block px-4 py-2 text-sm text-white hover:bg-gray-800 hover:text-white" href="/zh-cn/index.html" role="menuitem">中文 (简体)</a>
+<a class="block px-4 py-2 text-sm text-white hover:bg-gray-800 hover:text-white" href="/zh-tw/index.html" role="menuitem">中文 (繁体)</a>
+<a class="block px-4 py-2 text-sm text-white hover:bg-gray-800 hover:text-white" href="/fr/index.html" role="menuitem">Français (法语)</a>
+<a class="block px-4 py-2 text-sm text-white hover:bg-gray-800 hover:text-white" href="/de/index.html" role="menuitem">Deutsch (德语)</a>
+<a class="block px-4 py-2 text-sm text-white hover:bg-gray-800 hover:text-white" href="/ja/index.html" role="menuitem">日本語 (日语)</a>
+<a class="block px-4 py-2 text-sm text-white hover:bg-gray-800 hover:text-white" href="/ar/index.html" role="menuitem">العربية (阿拉伯语)</a>
+<a class="block px-4 py-2 text-sm text-white hover:bg-gray-800 hover:text-white" href="/pt/index.html" role="menuitem">Português (葡萄牙语)</a>
+<a class="block px-4 py-2 text-sm text-white hover:bg-gray-800 hover:text-white" href="/ko/index.html" role="menuitem">한국어 (韩语)</a>
+<a class="block px-4 py-2 text-sm text-white hover:bg-gray-800 hover:text-white" href="/ru/index.html" role="menuitem">Русский (俄语)</a>
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 <!-- DIVIDER -->
@@ -416,14 +472,18 @@
 <p class="font-inter text-center text-sm text-gray-400 lg:mt-0" data-translate-id="copyright" data-translate-repeat="true">© 版权所有 2024。保留所有权利。</p>
 </div>
 </div>
-</footer> </footer>
+</footer>
+</footer>
 <script>
+        function toggleMenu(menuId) {
+            const menu = document.getElementById(menuId);
+            menu.classList.toggle('hidden');
+        }
+        const jsonDiv = document.getElementById('jsonData');
+       
+        const Groups1 = JSON.parse(jsonDiv.getAttribute('data-json'));
 
-       // const Groups1 = ["Afghanistan","Albania","Algeria","Andorra","Angola","Antigua and Barbuda","Argentina","Armenia","Australia","Austria","Azerbaijan","Bahamas","Bahrain","Bangladesh","Barbados","Belarus","Belgium","Belize","Benin","Bhutan","Bolivia","Bosnia and Herzegovina","Botswana","Brazil","Brunei","Bulgaria","Burkina Faso","Burundi","Cabo Verde","Cambodia","Cameroon","Canada","Central African Republic","Chad","Chile","China","Colombia","Comoros","Congo","Costa Rica","Croatia","Cuba","Cyprus","Czech Republic","Denmark","Djibouti","Dominica","Dominican Republic","Ecuador","Egypt","El Salvador","Equatorial Guinea","Eritrea","Estonia","Eswatini","Ethiopia","Fiji","Finland","France","Gabon","Gambia","Georgia","Germany","Ghana","Greece","Grenada","Guatemala","Guinea","Guinea-Bissau","Guyana","Haiti","Honduras","Hungary","Iceland","India","Indonesia","Iran","Iraq","Ireland","Israel","Italy","Jamaica","Japan","Jordan","Kazakhstan","Kenya","Kiribati","Korea, North","Korea, South","Kuwait","Kyrgyzstan","Laos","Latvia","Lebanon","Lesotho","Liberia","Libya","Liechtenstein","Lithuania","Luxembourg","Madagascar","Malawi","Malaysia","Maldives","Mali","Malta","Marshall Islands","Mauritania","Mauritius","Mexico","Micronesia","Moldova","Monaco","Mongolia","Montenegro","Morocco","Mozambique","Myanmar","Namibia","Nauru","Nepal","Netherlands","New Zealand","Nicaragua","Niger","Nigeria","North Macedonia","Norway","Oman","Pakistan","Palau","Panama","Papua New Guinea","Paraguay","Peru","Philippines","Poland","Portugal","Qatar","Romania","Russia","Rwanda","Saint Kitts and Nevis","Saint Lucia","Saint Vincent and the Grenadines","Samoa","San Marino","Sao Tome and Principe","Saudi Arabia","Senegal","Serbia","Seychelles","Sierra Leone","Singapore","Slovakia","Slovenia","Solomon Islands","Somalia","South Africa","South Sudan","Spain","Sri Lanka","Sudan","Suriname","Sweden","Switzerland","Syria","Taiwan","Tajikistan","Tanzania","Thailand","Timor-Leste","Togo","Tonga","Trinidad and Tobago","Tunisia","Turkey","Turkmenistan","Tuvalu","Uganda","Ukraine","United Arab Emirates","United Kingdom","United States","Uruguay","Uzbekistan","Vanuatu","Vatican City","Venezuela","Vietnam","Yemen","Zambia","Zimbabwe"];
-        var jsonDiv = document.getElementById('jsonData');
-        const Groups1  = jsonDiv.getAttribute('data-json');
-        console.log('Groups:', Groups1);
-
+        
     </script>
 <script src="/public/js/default_random_generate.js"></script>
 </footer></body>

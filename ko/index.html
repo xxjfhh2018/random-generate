@@ -36,7 +36,7 @@
 </a>
 <!--logo end-->
 <div class="mt-14 flex flex-col space-y-8 lg:mt-0 lg:flex lg:flex-row lg:space-x-1 lg:space-y-0">
-<a class="font-inter lg: rounded-lg pb-8 lg:px-6 lg:py-4 lg:hover:bg-gray-100 transition-colors duration-200" href="https://randomgenerator.tools/ko/random-generator/random-item-generator.html">random item generator</a>
+<a class="font-inter lg: rounded-lg pb-8 lg:px-6 lg:py-4 lg:hover:bg-gray-100 transition-colors duration-200" data-translate-id="random_item_generator" data-translate-repeat="true" href="https://randomgenerator.tools/ko/random-generator/random-item-generator.html">무작위 아이템 생성기</a>
 <div class="relative group">
 <button class="font-inter flex items-center rounded-lg pb-8 lg:px-6 lg:py-4 lg:hover:bg-gray-100 transition-colors duration-200" data-translate-id="text_generator" data-translate-repeat="true">텍스트 생성기</button>
 <!-- 下拉菜单 -->
@@ -55,13 +55,42 @@
 <a class="font-inter lg: rounded-lg pb-8 lg:px-6 lg:py-4 lg:hover:bg-gray-100 transition-colors duration-200" data-translate-id="game_generator" data-translate-repeat="true" href="https://randomgenerator.tools/ko/random-generator/random-game-generator.html">게임 생성기</a>
 <a class="font-inter lg: rounded-lg pb-8 lg:px-6 lg:py-4 lg:hover:bg-gray-100 transition-colors duration-200" data-translate-id="state_generator" data-translate-repeat="true" href="https://randomgenerator.tools/ko/random-generator/random-state-generator.html">상태 생성기</a>
 </div>
-<div class="flex flex-col space-y-8 lg:flex lg:flex-row lg:space-x-3 lg:space-y-0">
-<a class="font-inter rounded-lg bg-gray-200 px-8 py-4 text-center hover:bg-gray-800 hover:text-white" data-translate-id="sign_up" data-translate-repeat="true" href="#">가입</a>
-<a class="font-inter rounded-lg bg-green-500 px-8 py-4 text-center text-white hover:bg-gray-800" data-translate-id="login" data-translate-repeat="true" href="#">로그인</a>
+<div class="flex items-center">
+<div class="relative inline-block text-left">
+<div>
+<button class="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" onclick="toggleMenu('header-language-menu')" type="button">
+              Language
+              <svg aria-hidden="true" class="-mr-1 ml-2 h-5 w-5" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" fill-rule="evenodd"></path>
+</svg>
+</button>
+</div>
+<div class="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none hidden" id="header-language-menu">
+<div aria-labelledby="options-menu" aria-orientation="vertical" class="py-1" role="menu">
+<a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" href="/index.html" role="menuitem">English (英文)</a>
+<a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" href="/es/index.html" role="menuitem">Español (西班牙语)</a>
+<a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" href="/zh-cn/index.html" role="menuitem">中文 (简体)</a>
+<a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" href="/zh-tw/index.html" role="menuitem">中文 (繁体)</a>
+<a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" href="/fr/index.html" role="menuitem">Français (法语)</a>
+<a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" href="/de/index.html" role="menuitem">Deutsch (德语)</a>
+<a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" href="/ja/index.html" role="menuitem">日本語 (日语)</a>
+<a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" href="/ar/index.html" role="menuitem">العربية (阿拉伯语)</a>
+<a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" href="/pt/index.html" role="menuitem">Português (葡萄牙语)</a>
+<a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" href="/ko/index.html" role="menuitem">한국어 (韩语)</a>
+<a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" href="/ru/index.html" role="menuitem">Русский (俄语)</a>
+</div>
+</div>
+</div>
 </div>
 </div>
 </nav>
-</section> </header>
+</section>
+<script>
+function toggleMenu() {
+  const menu = document.getElementById('language-menu');
+  menu.classList.toggle('hidden');
+}
+</script> </header>
 <main class="container mx-auto px-6 py-4">
 <main class="container mx-auto px-6 py-4">
 <!----HERO-->
@@ -80,255 +109,255 @@
 <div class="grid gap-5 sm:grid-cols-2 md:grid-cols-3 lg:gap-6">
 <!-- Item -->
 <div class="grid gap-4 rounded-md border border-solid border-gray-300 p-8 md:p-10">
-<a href="/random-generator/random-object-generator.html"><img alt="" class="inline-block h-16 w-16 object-cover" src="/public/images/lists/object.png"/></a>
-<h3 class="text-xl font-semibold"><a data-translate-id="content_title_1" data-translate-repeat="false" href="/random-generator/random-object-generator.html">무작위 객체 생성기</a></h3>
-<p class="text-sm text-gray-500"><a data-translate-id="content_desc_1" data-translate-repeat="false" href="/random-generator/random-object-generator.html">무작위 객체 생성기로 무한한 가능성을 탐험해보세요! 창의적인 영감, 글쓰기 프롬프트 또는 브레인스토밍 세션을 위한 고유 개체 목록을 즉시 생성합니다. 디자이너, 작가 및 신선한 아이디어를 찾는 모든 사람에게 적합합니다.</a></p>
+<a href="/random-generator/ko/random-object-generator.html"><img alt="" class="inline-block h-16 w-16 object-cover" src="/public/images/lists/object.png"/></a>
+<h3 class="text-xl font-semibold"><a data-translate-id="content_title_1" data-translate-repeat="false" href="/random-generator/ko/random-object-generator.html">무작위 객체 생성기</a></h3>
+<p class="text-sm text-gray-500"><a data-translate-id="content_desc_1" data-translate-repeat="false" href="/random-generator/ko/random-object-generator.html">무작위 객체 생성기로 무한한 가능성을 탐험해보세요! 창의적인 영감, 글쓰기 프롬프트 또는 브레인스토밍 세션을 위한 고유 개체 목록을 즉시 생성합니다. 디자이너, 작가 및 신선한 아이디어를 찾는 모든 사람에게 적합합니다.</a></p>
 </div>
 <!-- Item -->
 <div class="grid gap-4 rounded-md border border-solid border-gray-300 p-8 md:p-10">
-<a href="/random-generator/random-game-generator.html"><img alt="" class="inline-block h-16 w-16 object-cover" src="/public/images/lists/game.png"/></a>
-<h3 class="text-xl font-semibold"><a data-translate-id="content_title_2" data-translate-repeat="false" href="/random-generator/random-game-generator.html">무작위 게임 생성기</a></h3>
-<p class="text-sm text-gray-500"><a data-translate-id="content_desc_2" data-translate-repeat="false" href="/random-generator/random-game-generator.html">파티, 캐주얼 플레이 또는 새로운 즐겨찾기 발견을 위한 무작위 게임 제안을 생성합니다.</a></p>
+<a href="/random-generator/ko/random-game-generator.html"><img alt="" class="inline-block h-16 w-16 object-cover" src="/public/images/lists/game.png"/></a>
+<h3 class="text-xl font-semibold"><a data-translate-id="content_title_2" data-translate-repeat="false" href="/random-generator/ko/random-game-generator.html">무작위 게임 생성기</a></h3>
+<p class="text-sm text-gray-500"><a data-translate-id="content_desc_2" data-translate-repeat="false" href="/random-generator/ko/random-game-generator.html">파티, 캐주얼 플레이 또는 새로운 즐겨찾기 발견을 위한 무작위 게임 제안을 생성합니다.</a></p>
 </div>
 <!-- Item -->
 <div class="grid gap-4 rounded-md border border-solid border-gray-300 p-8 md:p-10">
-<a href="/random-generator/random-bible-verse-generator.html"><img alt="" class="inline-block h-16 w-16 object-cover" src="/public/images/lists/bible.png"/></a>
-<h3 class="text-xl font-semibold"><a data-translate-id="content_title_4" data-translate-repeat="false" href="/random-generator/random-bible-verse-generator.html">무작위 성경 구절 생성기</a></h3>
-<p class="text-sm text-gray-500"><a data-translate-id="content_desc_4" data-translate-repeat="false" href="/random-generator/random-bible-verse-generator.html">당신의 하루에 영감을 주고 안내할 무작위 성경 구절을 찾아보세요. 이 도구는 지혜와 평화를 찾는 데 도움이 되는 성경 구절을 생성합니다.</a></p>
+<a href="/random-generator/ko/random-bible-verse-generator.html"><img alt="" class="inline-block h-16 w-16 object-cover" src="/public/images/lists/bible.png"/></a>
+<h3 class="text-xl font-semibold"><a data-translate-id="content_title_4" data-translate-repeat="false" href="/random-generator/ko/random-bible-verse-generator.html">무작위 성경 구절 생성기</a></h3>
+<p class="text-sm text-gray-500"><a data-translate-id="content_desc_4" data-translate-repeat="false" href="/random-generator/ko/random-bible-verse-generator.html">당신의 하루에 영감을 주고 안내할 무작위 성경 구절을 찾아보세요. 이 도구는 지혜와 평화를 찾는 데 도움이 되는 성경 구절을 생성합니다.</a></p>
 </div>
 <!-- Item -->
 <div class="grid gap-4 rounded-md border border-solid border-gray-300 p-8 md:p-10">
-<a href="/random-generator/random-nfl-team-generator.html"><img alt="" class="inline-block h-16 w-16 object-cover" src="/public/images/lists/nfl_team.png"/></a>
-<h3 class="text-xl font-semibold"><a data-translate-id="content_title_5" data-translate-repeat="false" href="/random-generator/random-nfl-team-generator.html">무작위 NFL 팀 생성기</a></h3>
-<p class="text-sm text-gray-500"><a data-translate-id="content_desc_5" data-translate-repeat="false" href="/random-generator/random-nfl-team-generator.html">지원하거나 함께 플레이할 무작위 NFL 팀을 쉽게 생성하세요. 자발적인 축구 선택을 하는 데 좋습니다.</a></p>
+<a href="/random-generator/ko/random-nfl-team-generator.html"><img alt="" class="inline-block h-16 w-16 object-cover" src="/public/images/lists/nfl_team.png"/></a>
+<h3 class="text-xl font-semibold"><a data-translate-id="content_title_5" data-translate-repeat="false" href="/random-generator/ko/random-nfl-team-generator.html">무작위 NFL 팀 생성기</a></h3>
+<p class="text-sm text-gray-500"><a data-translate-id="content_desc_5" data-translate-repeat="false" href="/random-generator/ko/random-nfl-team-generator.html">지원하거나 함께 플레이할 무작위 NFL 팀을 쉽게 생성하세요. 자발적인 축구 선택을 하는 데 좋습니다.</a></p>
 </div>
 <!-- Item -->
 <div class="grid gap-4 rounded-md border border-solid border-gray-300 p-8 md:p-10">
-<a href="/random-generator/random-sentence-generator.html"><img alt="" class="inline-block h-16 w-16 object-cover" src="/public/images/lists/sentences.png"/></a>
-<h3 class="text-xl font-semibold"><a data-translate-id="content_title_6" data-translate-repeat="false" href="/random-generator/random-sentence-generator.html">무작위 문장 생성기</a></h3>
-<p class="text-sm text-gray-500"><a data-translate-id="content_desc_6" data-translate-repeat="false" href="/random-generator/random-sentence-generator.html">글쓰기 프롬프트, 재미 또는 창의성을 위해 임의의 문장을 생성합니다. 끝없이 다양한 조합을 탐색해 보세요.</a></p>
+<a href="/random-generator/ko/random-sentence-generator.html"><img alt="" class="inline-block h-16 w-16 object-cover" src="/public/images/lists/sentences.png"/></a>
+<h3 class="text-xl font-semibold"><a data-translate-id="content_title_6" data-translate-repeat="false" href="/random-generator/ko/random-sentence-generator.html">무작위 문장 생성기</a></h3>
+<p class="text-sm text-gray-500"><a data-translate-id="content_desc_6" data-translate-repeat="false" href="/random-generator/ko/random-sentence-generator.html">글쓰기 프롬프트, 재미 또는 창의성을 위해 임의의 문장을 생성합니다. 끝없이 다양한 조합을 탐색해 보세요.</a></p>
 </div>
 <!-- Item -->
 <div class="grid gap-4 rounded-md border border-solid border-gray-300 p-8 md:p-10">
-<a href="/random-generator/random-website-generator.html"><img alt="" class="inline-block h-16 w-16 object-cover" src="/public/images/lists/website.png"/></a>
-<h3 class="text-xl font-semibold"><a data-translate-id="content_title_7" data-translate-repeat="false" href="/random-generator/random-website-generator.html">임의의 웹사이트 생성기</a></h3>
-<p class="text-sm text-gray-500"><a data-translate-id="content_desc_7" data-translate-repeat="false" href="/random-generator/random-website-generator.html">이 무작위 웹사이트 생성기로 새롭고 흥미로운 웹사이트를 찾아보세요. 호기심과 탐구에 적합합니다.</a></p>
+<a href="/random-generator/ko/random-website-generator.html"><img alt="" class="inline-block h-16 w-16 object-cover" src="/public/images/lists/website.png"/></a>
+<h3 class="text-xl font-semibold"><a data-translate-id="content_title_7" data-translate-repeat="false" href="/random-generator/ko/random-website-generator.html">임의의 웹사이트 생성기</a></h3>
+<p class="text-sm text-gray-500"><a data-translate-id="content_desc_7" data-translate-repeat="false" href="/random-generator/ko/random-website-generator.html">이 무작위 웹사이트 생성기로 새롭고 흥미로운 웹사이트를 찾아보세요. 호기심과 탐구에 적합합니다.</a></p>
 </div>
 <!-- Item -->
 <div class="grid gap-4 rounded-md border border-solid border-gray-300 p-8 md:p-10">
-<a href="/random-generator/random-item-generator.html"><img alt="" class="inline-block h-16 w-16 object-cover" src="/public/images/lists/items.png"/></a>
-<h3 class="text-xl font-semibold"><a data-translate-id="content_title_8" data-translate-repeat="false" href="/random-generator/random-item-generator.html">무작위 아이템 생성기</a></h3>
-<p class="text-sm text-gray-500"><a data-translate-id="content_desc_8" data-translate-repeat="false" href="/random-generator/random-item-generator.html">게임, 브레인스토밍 또는 창의적인 프로젝트를 위한 무작위 항목을 생성합니다. 재미와 영감을 얻기에 완벽합니다.</a></p>
+<a href="/random-generator/ko/random-item-generator.html"><img alt="" class="inline-block h-16 w-16 object-cover" src="/public/images/lists/items.png"/></a>
+<h3 class="text-xl font-semibold"><a data-translate-id="content_title_8" data-translate-repeat="false" href="/random-generator/ko/random-item-generator.html">무작위 아이템 생성기</a></h3>
+<p class="text-sm text-gray-500"><a data-translate-id="content_desc_8" data-translate-repeat="false" href="/random-generator/ko/random-item-generator.html">게임, 브레인스토밍 또는 창의적인 프로젝트를 위한 무작위 항목을 생성합니다. 재미와 영감을 얻기에 완벽합니다.</a></p>
 </div>
 <!-- Item -->
 <div class="grid gap-4 rounded-md border border-solid border-gray-300 p-8 md:p-10">
-<a href="/random-generator/random-state-generator.html"><img alt="" class="inline-block h-16 w-16 object-cover" src="/public/images/lists/real-state.png"/></a>
-<h3 class="text-xl font-semibold"><a data-translate-id="content_title_9" data-translate-repeat="false" href="/random-generator/random-state-generator.html">무작위 상태 생성기</a></h3>
-<p class="text-sm text-gray-500"><a data-translate-id="content_desc_9" data-translate-repeat="false" href="/random-generator/random-state-generator.html">다음 여행에 대해 알아보거나 계획하려면 임의의 미국 주를 생성하세요. 여행과 교육에 좋습니다.</a></p>
+<a href="/random-generator/ko/random-state-generator.html"><img alt="" class="inline-block h-16 w-16 object-cover" src="/public/images/lists/real-state.png"/></a>
+<h3 class="text-xl font-semibold"><a data-translate-id="content_title_9" data-translate-repeat="false" href="/random-generator/ko/random-state-generator.html">무작위 상태 생성기</a></h3>
+<p class="text-sm text-gray-500"><a data-translate-id="content_desc_9" data-translate-repeat="false" href="/random-generator/ko/random-state-generator.html">다음 여행에 대해 알아보거나 계획하려면 임의의 미국 주를 생성하세요. 여행과 교육에 좋습니다.</a></p>
 </div>
 <!-- Item -->
 <div class="grid gap-4 rounded-md border border-solid border-gray-300 p-8 md:p-10">
-<a href="/random-generator/random-string-generator.html"><img alt="" class="inline-block h-16 w-16 object-cover" src="/public/images/lists/string.png"/></a>
-<h3 class="text-xl font-semibold"><a data-translate-id="content_title_10" data-translate-repeat="false" href="/random-generator/random-string-generator.html">무작위 문자열 생성기</a></h3>
-<p class="text-sm text-gray-500"><a data-translate-id="content_desc_10" data-translate-repeat="false" href="/random-generator/random-string-generator.html">프로그래밍, 비밀번호 또는 창의적인 실험을 위해 임의의 문자열을 생성합니다. 안전하고 맞춤화 가능합니다.</a></p>
+<a href="/random-generator/ko/random-string-generator.html"><img alt="" class="inline-block h-16 w-16 object-cover" src="/public/images/lists/string.png"/></a>
+<h3 class="text-xl font-semibold"><a data-translate-id="content_title_10" data-translate-repeat="false" href="/random-generator/ko/random-string-generator.html">무작위 문자열 생성기</a></h3>
+<p class="text-sm text-gray-500"><a data-translate-id="content_desc_10" data-translate-repeat="false" href="/random-generator/ko/random-string-generator.html">프로그래밍, 비밀번호 또는 창의적인 실험을 위해 임의의 문자열을 생성합니다. 안전하고 맞춤화 가능합니다.</a></p>
 </div>
 <!-- Item -->
 <div class="grid gap-4 rounded-md border border-solid border-gray-300 p-8 md:p-10">
-<a href="/random-generator/random-topic-generator.html"><img alt="" class="inline-block h-16 w-16 object-cover" src="/public/images/lists/topic.png"/></a>
-<h3 class="text-xl font-semibold"><a data-translate-id="content_title_11" data-translate-repeat="false" href="/random-generator/random-topic-generator.html">무작위 주제 생성기</a></h3>
-<p class="text-sm text-gray-500"><a data-translate-id="content_desc_11" data-translate-repeat="false" href="/random-generator/random-topic-generator.html">에세이, 토론 또는 창의적인 프로젝트를 위한 무작위 주제를 생성하세요. 학생과 창작자에게 적합합니다.</a></p>
+<a href="/random-generator/ko/random-topic-generator.html"><img alt="" class="inline-block h-16 w-16 object-cover" src="/public/images/lists/topic.png"/></a>
+<h3 class="text-xl font-semibold"><a data-translate-id="content_title_11" data-translate-repeat="false" href="/random-generator/ko/random-topic-generator.html">무작위 주제 생성기</a></h3>
+<p class="text-sm text-gray-500"><a data-translate-id="content_desc_11" data-translate-repeat="false" href="/random-generator/ko/random-topic-generator.html">에세이, 토론 또는 창의적인 프로젝트를 위한 무작위 주제를 생성하세요. 학생과 창작자에게 적합합니다.</a></p>
 </div>
 <!-- Item -->
 <div class="grid gap-4 rounded-md border border-solid border-gray-300 p-8 md:p-10">
-<a href="/random-generator/random-food-generator.html"><img alt="" class="inline-block h-16 w-16 object-cover" src="/public/images/lists/food.png"/></a>
-<h3 class="text-xl font-semibold"><a data-translate-id="content_title_12" data-translate-repeat="false" href="/random-generator/random-food-generator.html">무작위 음식 생성기</a></h3>
-<p class="text-sm text-gray-500"><a data-translate-id="content_desc_12" data-translate-repeat="false" href="/random-generator/random-food-generator.html">다음 식사나 간식에 영감을 줄 무작위 음식 아이디어를 생성해 보세요. 미식가와 모험심이 강한 먹는 사람에게 이상적입니다.</a></p>
+<a href="/random-generator/ko/random-food-generator.html"><img alt="" class="inline-block h-16 w-16 object-cover" src="/public/images/lists/food.png"/></a>
+<h3 class="text-xl font-semibold"><a data-translate-id="content_title_12" data-translate-repeat="false" href="/random-generator/ko/random-food-generator.html">무작위 음식 생성기</a></h3>
+<p class="text-sm text-gray-500"><a data-translate-id="content_desc_12" data-translate-repeat="false" href="/random-generator/ko/random-food-generator.html">다음 식사나 간식에 영감을 줄 무작위 음식 아이디어를 생성해 보세요. 미식가와 모험심이 강한 먹는 사람에게 이상적입니다.</a></p>
 </div>
 <!-- Item -->
 <div class="grid gap-4 rounded-md border border-solid border-gray-300 p-8 md:p-10">
-<a href="/random-generator/random-verse-generator.html"><img alt="" class="inline-block h-16 w-16 object-cover" src="/public/images/lists/verse.png"/></a>
-<h3 class="text-xl font-semibold"><a data-translate-id="content_title_13" data-translate-repeat="false" href="/random-generator/random-verse-generator.html">무작위 구절 생성기</a></h3>
-<p class="text-sm text-gray-500"><a data-translate-id="content_desc_13" data-translate-repeat="false" href="/random-generator/random-verse-generator.html">당신의 생각과 감정에 영감을 주기 위해 경전, 시, 문학에서 무작위 구절을 생성하세요.</a></p>
+<a href="/random-generator/ko/random-verse-generator.html"><img alt="" class="inline-block h-16 w-16 object-cover" src="/public/images/lists/verse.png"/></a>
+<h3 class="text-xl font-semibold"><a data-translate-id="content_title_13" data-translate-repeat="false" href="/random-generator/ko/random-verse-generator.html">무작위 구절 생성기</a></h3>
+<p class="text-sm text-gray-500"><a data-translate-id="content_desc_13" data-translate-repeat="false" href="/random-generator/ko/random-verse-generator.html">당신의 생각과 감정에 영감을 주기 위해 경전, 시, 문학에서 무작위 구절을 생성하세요.</a></p>
 </div>
 <!-- Item -->
 <div class="grid gap-4 rounded-md border border-solid border-gray-300 p-8 md:p-10">
-<a href="/random-generator/random-celebrity-generator.html"><img alt="" class="inline-block h-16 w-16 object-cover" src="/public/images/lists/celebrity.png"/></a>
-<h3 class="text-xl font-semibold"><a data-translate-id="content_title_15" data-translate-repeat="false" href="/random-generator/random-celebrity-generator.html">무작위 유명인 생성기</a></h3>
-<p class="text-sm text-gray-500"><a data-translate-id="content_desc_15" data-translate-repeat="false" href="/random-generator/random-celebrity-generator.html">재미를 위해 다양한 분야의 유명인을 무작위로 생성하거나 인기 인물에 대해 알아보세요.</a></p>
+<a href="/random-generator/ko/random-celebrity-generator.html"><img alt="" class="inline-block h-16 w-16 object-cover" src="/public/images/lists/celebrity.png"/></a>
+<h3 class="text-xl font-semibold"><a data-translate-id="content_title_15" data-translate-repeat="false" href="/random-generator/ko/random-celebrity-generator.html">무작위 유명인 생성기</a></h3>
+<p class="text-sm text-gray-500"><a data-translate-id="content_desc_15" data-translate-repeat="false" href="/random-generator/ko/random-celebrity-generator.html">재미를 위해 다양한 분야의 유명인을 무작위로 생성하거나 인기 인물에 대해 알아보세요.</a></p>
 </div>
 <!-- Item -->
 <div class="grid gap-4 rounded-md border border-solid border-gray-300 p-8 md:p-10">
-<a href="/random-generator/random-job-generator.html"><img alt="" class="inline-block h-16 w-16 object-cover" src="/public/images/lists/job.png"/></a>
-<h3 class="text-xl font-semibold"><a data-translate-id="content_title_16" data-translate-repeat="false" href="/random-generator/random-job-generator.html">무작위 작업 생성기</a></h3>
-<p class="text-sm text-gray-500"><a data-translate-id="content_desc_16" data-translate-repeat="false" href="/random-generator/random-job-generator.html">직업 아이디어, 게임 또는 창의적인 브레인스토밍을 위한 무작위 직책을 생성합니다. 무한한 가능성!</a></p>
+<a href="/random-generator/ko/random-job-generator.html"><img alt="" class="inline-block h-16 w-16 object-cover" src="/public/images/lists/job.png"/></a>
+<h3 class="text-xl font-semibold"><a data-translate-id="content_title_16" data-translate-repeat="false" href="/random-generator/ko/random-job-generator.html">무작위 작업 생성기</a></h3>
+<p class="text-sm text-gray-500"><a data-translate-id="content_desc_16" data-translate-repeat="false" href="/random-generator/ko/random-job-generator.html">직업 아이디어, 게임 또는 창의적인 브레인스토밍을 위한 무작위 직책을 생성합니다. 무한한 가능성!</a></p>
 </div>
 <!-- Item -->
 <div class="grid gap-4 rounded-md border border-solid border-gray-300 p-8 md:p-10">
-<a href="/random-generator/random-mlb-team-generator.html"><img alt="" class="inline-block h-16 w-16 object-cover" src="/public/images/lists/mlbteam.png"/></a>
-<h3 class="text-xl font-semibold"><a data-translate-id="content_title_17" data-translate-repeat="false" href="/random-generator/random-mlb-team-generator.html">무작위 mlb 팀 생성기</a></h3>
-<p class="text-sm text-gray-500"><a data-translate-id="content_desc_17" data-translate-repeat="false" href="/random-generator/random-mlb-team-generator.html">팬, 판타지 리그 또는 즉흥적인 재미를 위해 무작위 MLB 팀을 생성하세요. 간단하고 매력적입니다.</a></p>
+<a href="/random-generator/ko/random-mlb-team-generator.html"><img alt="" class="inline-block h-16 w-16 object-cover" src="/public/images/lists/mlbteam.png"/></a>
+<h3 class="text-xl font-semibold"><a data-translate-id="content_title_17" data-translate-repeat="false" href="/random-generator/ko/random-mlb-team-generator.html">무작위 mlb 팀 생성기</a></h3>
+<p class="text-sm text-gray-500"><a data-translate-id="content_desc_17" data-translate-repeat="false" href="/random-generator/ko/random-mlb-team-generator.html">팬, 판타지 리그 또는 즉흥적인 재미를 위해 무작위 MLB 팀을 생성하세요. 간단하고 매력적입니다.</a></p>
 </div>
 <!-- Item -->
 <div class="grid gap-4 rounded-md border border-solid border-gray-300 p-8 md:p-10">
-<a href="/random-generator/random-scripture-generator.html"><img alt="" class="inline-block h-16 w-16 object-cover" src="/public/images/lists/scripture.png"/></a>
-<h3 class="text-xl font-semibold"><a data-translate-id="content_title_18" data-translate-repeat="false" href="/random-generator/random-scripture-generator.html">무작위 성경 생성기</a></h3>
-<p class="text-sm text-gray-500"><a data-translate-id="content_desc_18" data-translate-repeat="false" href="/random-generator/random-scripture-generator.html">인도, 영감 또는 영적 성장을 위해 무작위 경전을 생성합니다. 매일의 반성에 딱 맞습니다.</a></p>
+<a href="/random-generator/ko/random-scripture-generator.html"><img alt="" class="inline-block h-16 w-16 object-cover" src="/public/images/lists/scripture.png"/></a>
+<h3 class="text-xl font-semibold"><a data-translate-id="content_title_18" data-translate-repeat="false" href="/random-generator/ko/random-scripture-generator.html">무작위 성경 생성기</a></h3>
+<p class="text-sm text-gray-500"><a data-translate-id="content_desc_18" data-translate-repeat="false" href="/random-generator/ko/random-scripture-generator.html">인도, 영감 또는 영적 성장을 위해 무작위 경전을 생성합니다. 매일의 반성에 딱 맞습니다.</a></p>
 </div>
 <!-- Item -->
 <div class="grid gap-4 rounded-md border border-solid border-gray-300 p-8 md:p-10">
-<a href="/random-generator/random-tarot-card-generator.html"><img alt="" class="inline-block h-16 w-16 object-cover" src="/public/images/lists/tarotcard.png"/></a>
-<h3 class="text-xl font-semibold"><a data-translate-id="content_title_19" data-translate-repeat="false" href="/random-generator/random-tarot-card-generator.html">무작위 타로 카드 생성기</a></h3>
-<p class="text-sm text-gray-500"><a data-translate-id="content_desc_19" data-translate-repeat="false" href="/random-generator/random-tarot-card-generator.html">독서, 재미 또는 통찰력을 위해 임의의 타로 카드를 생성하십시오. 초보자와 전문가 모두에게 적합합니다.</a></p>
+<a href="/random-generator/ko/random-tarot-card-generator.html"><img alt="" class="inline-block h-16 w-16 object-cover" src="/public/images/lists/tarotcard.png"/></a>
+<h3 class="text-xl font-semibold"><a data-translate-id="content_title_19" data-translate-repeat="false" href="/random-generator/ko/random-tarot-card-generator.html">무작위 타로 카드 생성기</a></h3>
+<p class="text-sm text-gray-500"><a data-translate-id="content_desc_19" data-translate-repeat="false" href="/random-generator/ko/random-tarot-card-generator.html">독서, 재미 또는 통찰력을 위해 임의의 타로 카드를 생성하십시오. 초보자와 전문가 모두에게 적합합니다.</a></p>
 </div>
 <!-- Item -->
 <div class="grid gap-4 rounded-md border border-solid border-gray-300 p-8 md:p-10">
-<a href="/random-generator/random-theme-generator.html"><img alt="" class="inline-block h-16 w-16 object-cover" src="/public/images/lists/theme.png"/></a>
-<h3 class="text-xl font-semibold"><a data-translate-id="content_title_20" data-translate-repeat="false" href="/random-generator/random-theme-generator.html">무작위 테마 생성기</a></h3>
-<p class="text-sm text-gray-500"><a data-translate-id="content_desc_20" data-translate-repeat="false" href="/random-generator/random-theme-generator.html">프로젝트, 이벤트 또는 글쓰기에 대한 임의의 테마를 생성합니다. 영감과 브레인스토밍에 적합합니다.</a></p>
+<a href="/random-generator/ko/random-theme-generator.html"><img alt="" class="inline-block h-16 w-16 object-cover" src="/public/images/lists/theme.png"/></a>
+<h3 class="text-xl font-semibold"><a data-translate-id="content_title_20" data-translate-repeat="false" href="/random-generator/ko/random-theme-generator.html">무작위 테마 생성기</a></h3>
+<p class="text-sm text-gray-500"><a data-translate-id="content_desc_20" data-translate-repeat="false" href="/random-generator/ko/random-theme-generator.html">프로젝트, 이벤트 또는 글쓰기에 대한 임의의 테마를 생성합니다. 영감과 브레인스토밍에 적합합니다.</a></p>
 </div>
 <!-- Item -->
 <div class="grid gap-4 rounded-md border border-solid border-gray-300 p-8 md:p-10">
-<a href="/random-generator/random-us-state-generator.html"><img alt="" class="inline-block h-16 w-16 object-cover" src="/public/images/lists/usstate.png"/></a>
-<h3 class="text-xl font-semibold"><a data-translate-id="content_title_21" data-translate-repeat="false" href="/random-generator/random-us-state-generator.html">무작위 미국 상태 생성기</a></h3>
-<p class="text-sm text-gray-500"><a data-translate-id="content_desc_21" data-translate-repeat="false" href="/random-generator/random-us-state-generator.html">모험에 대해 알아보거나 계획하기 위해 임의의 미국 주를 생성합니다. 지리 매니아에게 적합합니다.</a></p>
+<a href="/random-generator/ko/random-us-state-generator.html"><img alt="" class="inline-block h-16 w-16 object-cover" src="/public/images/lists/usstate.png"/></a>
+<h3 class="text-xl font-semibold"><a data-translate-id="content_title_21" data-translate-repeat="false" href="/random-generator/ko/random-us-state-generator.html">무작위 미국 상태 생성기</a></h3>
+<p class="text-sm text-gray-500"><a data-translate-id="content_desc_21" data-translate-repeat="false" href="/random-generator/ko/random-us-state-generator.html">모험에 대해 알아보거나 계획하기 위해 임의의 미국 주를 생성합니다. 지리 매니아에게 적합합니다.</a></p>
 </div>
 <!-- Item -->
 <div class="grid gap-4 rounded-md border border-solid border-gray-300 p-8 md:p-10">
-<a href="/random-generator/random-anime-generator.html"><img alt="" class="inline-block h-16 w-16 object-cover" src="/public/images/lists/anime.png"/></a>
-<h3 class="text-xl font-semibold"><a data-translate-id="content_title_22" data-translate-repeat="false" href="/random-generator/random-anime-generator.html">무작위 애니메이션 생성기</a></h3>
-<p class="text-sm text-gray-500"><a data-translate-id="content_desc_22" data-translate-repeat="false" href="/random-generator/random-anime-generator.html">시청할 임의의 애니메이션 추천을 생성합니다. 팬과 신규 이민자 모두에게 적합합니다.</a></p>
+<a href="/random-generator/ko/random-anime-generator.html"><img alt="" class="inline-block h-16 w-16 object-cover" src="/public/images/lists/anime.png"/></a>
+<h3 class="text-xl font-semibold"><a data-translate-id="content_title_22" data-translate-repeat="false" href="/random-generator/ko/random-anime-generator.html">무작위 애니메이션 생성기</a></h3>
+<p class="text-sm text-gray-500"><a data-translate-id="content_desc_22" data-translate-repeat="false" href="/random-generator/ko/random-anime-generator.html">시청할 임의의 애니메이션 추천을 생성합니다. 팬과 신규 이민자 모두에게 적합합니다.</a></p>
 </div>
 <!-- Item -->
 <div class="grid gap-4 rounded-md border border-solid border-gray-300 p-8 md:p-10">
-<a href="/random-generator/random-location-generator.html"><img alt="" class="inline-block h-16 w-16 object-cover" src="/public/images/lists/location.png"/></a>
-<h3 class="text-xl font-semibold"><a data-translate-id="content_title_24" data-translate-repeat="false" href="/random-generator/random-location-generator.html">무작위 위치 생성기</a></h3>
-<p class="text-sm text-gray-500"><a data-translate-id="content_desc_24" data-translate-repeat="false" href="/random-generator/random-location-generator.html">여행 아이디어, 게임 또는 지리 학습을 위한 임의의 위치를 ​​생성합니다. 무한한 가능성!</a></p>
+<a href="/random-generator/ko/random-location-generator.html"><img alt="" class="inline-block h-16 w-16 object-cover" src="/public/images/lists/location.png"/></a>
+<h3 class="text-xl font-semibold"><a data-translate-id="content_title_24" data-translate-repeat="false" href="/random-generator/ko/random-location-generator.html">무작위 위치 생성기</a></h3>
+<p class="text-sm text-gray-500"><a data-translate-id="content_desc_24" data-translate-repeat="false" href="/random-generator/ko/random-location-generator.html">여행 아이디어, 게임 또는 지리 학습을 위한 임의의 위치를 ​​생성합니다. 무한한 가능성!</a></p>
 </div>
 <!-- Item -->
 <div class="grid gap-4 rounded-md border border-solid border-gray-300 p-8 md:p-10">
-<a href="/random-generator/random-flag-generator.html"><img alt="" class="inline-block h-16 w-16 object-cover" src="/public/images/lists/flag.png"/></a>
-<h3 class="text-xl font-semibold"><a data-translate-id="content_title_25" data-translate-repeat="false" href="/random-generator/random-flag-generator.html">무작위 플래그 생성기</a></h3>
-<p class="text-sm text-gray-500"><a data-translate-id="content_desc_25" data-translate-repeat="false" href="/random-generator/random-flag-generator.html">무작위 플래그를 생성하여 디자인, 역사 및 의미에 대해 알아보세요. 지리학 애호가에게 적합합니다.</a></p>
+<a href="/random-generator/ko/random-flag-generator.html"><img alt="" class="inline-block h-16 w-16 object-cover" src="/public/images/lists/flag.png"/></a>
+<h3 class="text-xl font-semibold"><a data-translate-id="content_title_25" data-translate-repeat="false" href="/random-generator/ko/random-flag-generator.html">무작위 플래그 생성기</a></h3>
+<p class="text-sm text-gray-500"><a data-translate-id="content_desc_25" data-translate-repeat="false" href="/random-generator/ko/random-flag-generator.html">무작위 플래그를 생성하여 디자인, 역사 및 의미에 대해 알아보세요. 지리학 애호가에게 적합합니다.</a></p>
 </div>
 <!-- Item -->
 <div class="grid gap-4 rounded-md border border-solid border-gray-300 p-8 md:p-10">
-<a href="/random-generator/random-poker-card-generator.html"><img alt="" class="inline-block h-16 w-16 object-cover" src="/public/images/lists/pokercard.png"/></a>
-<h3 class="text-xl font-semibold"><a data-translate-id="content_title_26" data-translate-repeat="false" href="/random-generator/random-poker-card-generator.html">무작위 포커 카드 생성기</a></h3>
-<p class="text-sm text-gray-500"><a data-translate-id="content_desc_26" data-translate-repeat="false" href="/random-generator/random-poker-card-generator.html">게임, 연습 또는 재미를 위해 무작위 포커 카드를 생성하세요. 빠르고 사용하기 쉽습니다.</a></p>
+<a href="/random-generator/ko/random-poker-card-generator.html"><img alt="" class="inline-block h-16 w-16 object-cover" src="/public/images/lists/pokercard.png"/></a>
+<h3 class="text-xl font-semibold"><a data-translate-id="content_title_26" data-translate-repeat="false" href="/random-generator/ko/random-poker-card-generator.html">무작위 포커 카드 생성기</a></h3>
+<p class="text-sm text-gray-500"><a data-translate-id="content_desc_26" data-translate-repeat="false" href="/random-generator/ko/random-poker-card-generator.html">게임, 연습 또는 재미를 위해 무작위 포커 카드를 생성하세요. 빠르고 사용하기 쉽습니다.</a></p>
 </div>
 <!-- Item -->
 <div class="grid gap-4 rounded-md border border-solid border-gray-300 p-8 md:p-10">
-<a href="/random-generator/random-quote-generator.html"><img alt="" class="inline-block h-16 w-16 object-cover" src="/public/images/lists/quote.png"/></a>
-<h3 class="text-xl font-semibold"><a data-translate-id="content_title_27" data-translate-repeat="false" href="/random-generator/random-quote-generator.html">무작위 인용 생성기</a></h3>
-<p class="text-sm text-gray-500"><a data-translate-id="content_desc_27" data-translate-repeat="false" href="/random-generator/random-quote-generator.html">유명한 인물, 작가, 지도자로부터 무작위 인용문을 생성합니다. 영감과 동기 부여에 적합합니다.</a></p>
+<a href="/random-generator/ko/random-quote-generator.html"><img alt="" class="inline-block h-16 w-16 object-cover" src="/public/images/lists/quote.png"/></a>
+<h3 class="text-xl font-semibold"><a data-translate-id="content_title_27" data-translate-repeat="false" href="/random-generator/ko/random-quote-generator.html">무작위 인용 생성기</a></h3>
+<p class="text-sm text-gray-500"><a data-translate-id="content_desc_27" data-translate-repeat="false" href="/random-generator/ko/random-quote-generator.html">유명한 인물, 작가, 지도자로부터 무작위 인용문을 생성합니다. 영감과 동기 부여에 적합합니다.</a></p>
 </div>
 <!-- Item -->
 <div class="grid gap-4 rounded-md border border-solid border-gray-300 p-8 md:p-10">
-<a href="/random-generator/random-aesthetic-generator.html"><img alt="" class="inline-block h-16 w-16 object-cover" src="/public/images/lists/aesthetic.png"/></a>
-<h3 class="text-xl font-semibold"><a data-translate-id="content_title_28" data-translate-repeat="false" href="/random-generator/random-aesthetic-generator.html">무작위 미적 생성기</a></h3>
-<p class="text-sm text-gray-500"><a data-translate-id="content_desc_28" data-translate-repeat="false" href="/random-generator/random-aesthetic-generator.html">예술, 디자인 또는 영감을 위한 임의의 미적 테마를 생성합니다. 창의적인 마음을 가진 사람에게 적합합니다.</a></p>
+<a href="/random-generator/ko/random-aesthetic-generator.html"><img alt="" class="inline-block h-16 w-16 object-cover" src="/public/images/lists/aesthetic.png"/></a>
+<h3 class="text-xl font-semibold"><a data-translate-id="content_title_28" data-translate-repeat="false" href="/random-generator/ko/random-aesthetic-generator.html">무작위 미적 생성기</a></h3>
+<p class="text-sm text-gray-500"><a data-translate-id="content_desc_28" data-translate-repeat="false" href="/random-generator/ko/random-aesthetic-generator.html">예술, 디자인 또는 영감을 위한 임의의 미적 테마를 생성합니다. 창의적인 마음을 가진 사람에게 적합합니다.</a></p>
 </div>
 <!-- Item -->
 <div class="grid gap-4 rounded-md border border-solid border-gray-300 p-8 md:p-10">
-<a href="/random-generator/random-bracket-generator.html"><img alt="" class="inline-block h-16 w-16 object-cover" src="/public/images/lists/bracket.png"/></a>
-<h3 class="text-xl font-semibold"><a data-translate-id="content_title_29" data-translate-repeat="false" href="/random-generator/random-bracket-generator.html">무작위 브래킷 생성기</a></h3>
-<p class="text-sm text-gray-500"><a data-translate-id="content_desc_29" data-translate-repeat="false" href="/random-generator/random-bracket-generator.html">스포츠, 게임 또는 대회에 대한 무작위 대진표를 생성합니다. 재미있는 이벤트를 조직하는 데 적합합니다.</a></p>
+<a href="/random-generator/ko/random-bracket-generator.html"><img alt="" class="inline-block h-16 w-16 object-cover" src="/public/images/lists/bracket.png"/></a>
+<h3 class="text-xl font-semibold"><a data-translate-id="content_title_29" data-translate-repeat="false" href="/random-generator/ko/random-bracket-generator.html">무작위 브래킷 생성기</a></h3>
+<p class="text-sm text-gray-500"><a data-translate-id="content_desc_29" data-translate-repeat="false" href="/random-generator/ko/random-bracket-generator.html">스포츠, 게임 또는 대회에 대한 무작위 대진표를 생성합니다. 재미있는 이벤트를 조직하는 데 적합합니다.</a></p>
 </div>
 <!-- Item -->
 <div class="grid gap-4 rounded-md border border-solid border-gray-300 p-8 md:p-10">
-<a href="/random-generator/random-country-name-generator.html"><img alt="" class="inline-block h-16 w-16 object-cover" src="/public/images/lists/countryname.png"/></a>
-<h3 class="text-xl font-semibold"><a data-translate-id="content_title_56" data-translate-repeat="false" href="/random-generator/random-country-name-generator.html">임의의 국가 이름 생성기</a></h3>
-<p class="text-sm text-gray-500"><a data-translate-id="content_desc_56" data-translate-repeat="false" href="/random-generator/random-country-name-generator.html">창의적인 프로젝트나 재미있는 교육 목적을 위해 임의의 국가 이름을 생성합니다.</a></p>
+<a href="/random-generator/ko/random-country-name-generator.html"><img alt="" class="inline-block h-16 w-16 object-cover" src="/public/images/lists/countryname.png"/></a>
+<h3 class="text-xl font-semibold"><a data-translate-id="content_title_56" data-translate-repeat="false" href="/random-generator/ko/random-country-name-generator.html">임의의 국가 이름 생성기</a></h3>
+<p class="text-sm text-gray-500"><a data-translate-id="content_desc_56" data-translate-repeat="false" href="/random-generator/ko/random-country-name-generator.html">창의적인 프로젝트나 재미있는 교육 목적을 위해 임의의 국가 이름을 생성합니다.</a></p>
 </div>
 <!-- Item -->
 <div class="grid gap-4 rounded-md border border-solid border-gray-300 p-8 md:p-10">
-<a href="/random-generator/random-disney-movie-generator.html"><img alt="" class="inline-block h-16 w-16 object-cover" src="/public/images/lists/disneymovie.png"/></a>
-<h3 class="text-xl font-semibold"><a data-translate-id="content_title_57" data-translate-repeat="false" href="/random-generator/random-disney-movie-generator.html">무작위 디즈니 영화 생성기</a></h3>
-<p class="text-sm text-gray-500"><a data-translate-id="content_desc_57" data-translate-repeat="false" href="/random-generator/random-disney-movie-generator.html">임의의 디즈니 영화를 생성하여 사랑받는 고전 작품을 보거나 다시 방문해보세요.</a></p>
+<a href="/random-generator/ko/random-disney-movie-generator.html"><img alt="" class="inline-block h-16 w-16 object-cover" src="/public/images/lists/disneymovie.png"/></a>
+<h3 class="text-xl font-semibold"><a data-translate-id="content_title_57" data-translate-repeat="false" href="/random-generator/ko/random-disney-movie-generator.html">무작위 디즈니 영화 생성기</a></h3>
+<p class="text-sm text-gray-500"><a data-translate-id="content_desc_57" data-translate-repeat="false" href="/random-generator/ko/random-disney-movie-generator.html">임의의 디즈니 영화를 생성하여 사랑받는 고전 작품을 보거나 다시 방문해보세요.</a></p>
 </div>
 <!-- Item -->
 <div class="grid gap-4 rounded-md border border-solid border-gray-300 p-8 md:p-10">
-<a href="/random-generator/random-nfl-player-generator.html"><img alt="" class="inline-block h-16 w-16 object-cover" src="/public/images/lists/nflplayer.png"/></a>
-<h3 class="text-xl font-semibold"><a data-translate-id="content_title_58" data-translate-repeat="false" href="/random-generator/random-nfl-player-generator.html">무작위 NFL 플레이어 생성기</a></h3>
-<p class="text-sm text-gray-500"><a data-translate-id="content_desc_58" data-translate-repeat="false" href="/random-generator/random-nfl-player-generator.html">무작위 NFL 선수를 생성하여 통계, 경력 및 하이라이트에 대해 알아보세요.</a></p>
+<a href="/random-generator/ko/random-nfl-player-generator.html"><img alt="" class="inline-block h-16 w-16 object-cover" src="/public/images/lists/nflplayer.png"/></a>
+<h3 class="text-xl font-semibold"><a data-translate-id="content_title_58" data-translate-repeat="false" href="/random-generator/ko/random-nfl-player-generator.html">무작위 NFL 플레이어 생성기</a></h3>
+<p class="text-sm text-gray-500"><a data-translate-id="content_desc_58" data-translate-repeat="false" href="/random-generator/ko/random-nfl-player-generator.html">무작위 NFL 선수를 생성하여 통계, 경력 및 하이라이트에 대해 알아보세요.</a></p>
 </div>
 <!-- Item -->
 <div class="grid gap-4 rounded-md border border-solid border-gray-300 p-8 md:p-10">
-<a href="/random-generator/random-outfit-generator.html"><img alt="" class="inline-block h-16 w-16 object-cover" src="/public/images/lists/outfit.png"/></a>
-<h3 class="text-xl font-semibold"><a data-translate-id="content_title_59" data-translate-repeat="false" href="/random-generator/random-outfit-generator.html">무작위 의상 생성기</a></h3>
-<p class="text-sm text-gray-500"><a data-translate-id="content_desc_59" data-translate-repeat="false" href="/random-generator/random-outfit-generator.html">영감, 패션 팁 또는 재미를 위한 무작위 복장 제안을 생성합니다.</a></p>
+<a href="/random-generator/ko/random-outfit-generator.html"><img alt="" class="inline-block h-16 w-16 object-cover" src="/public/images/lists/outfit.png"/></a>
+<h3 class="text-xl font-semibold"><a data-translate-id="content_title_59" data-translate-repeat="false" href="/random-generator/ko/random-outfit-generator.html">무작위 의상 생성기</a></h3>
+<p class="text-sm text-gray-500"><a data-translate-id="content_desc_59" data-translate-repeat="false" href="/random-generator/ko/random-outfit-generator.html">영감, 패션 팁 또는 재미를 위한 무작위 복장 제안을 생성합니다.</a></p>
 </div>
 <!-- Item -->
 <div class="grid gap-4 rounded-md border border-solid border-gray-300 p-8 md:p-10">
-<a href="/random-generator/random-american-city-generator.html"><img alt="" class="inline-block h-16 w-16 object-cover" src="/public/images/lists/americancity.png"/></a>
-<h3 class="text-xl font-semibold"><a data-translate-id="content_title_61" data-translate-repeat="false" href="/random-generator/random-american-city-generator.html">임의의 미국 도시 생성기</a></h3>
-<p class="text-sm text-gray-500"><a data-translate-id="content_desc_61" data-translate-repeat="false" href="/random-generator/random-american-city-generator.html">여행에 대한 영감을 얻거나 지리에 대해 배우기 위해 임의의 미국 도시를 생성하세요.</a></p>
+<a href="/random-generator/ko/random-american-city-generator.html"><img alt="" class="inline-block h-16 w-16 object-cover" src="/public/images/lists/americancity.png"/></a>
+<h3 class="text-xl font-semibold"><a data-translate-id="content_title_61" data-translate-repeat="false" href="/random-generator/ko/random-american-city-generator.html">임의의 미국 도시 생성기</a></h3>
+<p class="text-sm text-gray-500"><a data-translate-id="content_desc_61" data-translate-repeat="false" href="/random-generator/ko/random-american-city-generator.html">여행에 대한 영감을 얻거나 지리에 대해 배우기 위해 임의의 미국 도시를 생성하세요.</a></p>
 </div>
 <!-- Item -->
 <div class="grid gap-4 rounded-md border border-solid border-gray-300 p-8 md:p-10">
-<a href="/random-generator/random-car-generator.html"><img alt="" class="inline-block h-16 w-16 object-cover" src="/public/images/lists/car.png"/></a>
-<h3 class="text-xl font-semibold"><a data-translate-id="content_title_62" data-translate-repeat="false" href="/random-generator/random-car-generator.html">무작위 자동차 생성기</a></h3>
-<p class="text-sm text-gray-500"><a data-translate-id="content_desc_62" data-translate-repeat="false" href="/random-generator/random-car-generator.html">재미, 연구 또는 영감을 위해 임의의 자동차 모델을 생성하세요. 자동차 매니아에게 적합합니다.</a></p>
+<a href="/random-generator/ko/random-car-generator.html"><img alt="" class="inline-block h-16 w-16 object-cover" src="/public/images/lists/car.png"/></a>
+<h3 class="text-xl font-semibold"><a data-translate-id="content_title_62" data-translate-repeat="false" href="/random-generator/ko/random-car-generator.html">무작위 자동차 생성기</a></h3>
+<p class="text-sm text-gray-500"><a data-translate-id="content_desc_62" data-translate-repeat="false" href="/random-generator/ko/random-car-generator.html">재미, 연구 또는 영감을 위해 임의의 자동차 모델을 생성하세요. 자동차 매니아에게 적합합니다.</a></p>
 </div>
 <!-- Item -->
 <div class="grid gap-4 rounded-md border border-solid border-gray-300 p-8 md:p-10">
-<a href="/random-generator/random-code-generator.html"><img alt="" class="inline-block h-16 w-16 object-cover" src="/public/images/lists/code.png"/></a>
-<h3 class="text-xl font-semibold"><a data-translate-id="content_title_63" data-translate-repeat="false" href="/random-generator/random-code-generator.html">무작위 코드 생성기</a></h3>
-<p class="text-sm text-gray-500"><a data-translate-id="content_desc_63" data-translate-repeat="false" href="/random-generator/random-code-generator.html">개발, 보안 또는 기타 프로젝트를 위한 임의의 코드를 생성합니다. 사용자 정의가 가능하고 다재다능합니다.</a></p>
+<a href="/random-generator/ko/random-code-generator.html"><img alt="" class="inline-block h-16 w-16 object-cover" src="/public/images/lists/code.png"/></a>
+<h3 class="text-xl font-semibold"><a data-translate-id="content_title_63" data-translate-repeat="false" href="/random-generator/ko/random-code-generator.html">무작위 코드 생성기</a></h3>
+<p class="text-sm text-gray-500"><a data-translate-id="content_desc_63" data-translate-repeat="false" href="/random-generator/ko/random-code-generator.html">개발, 보안 또는 기타 프로젝트를 위한 임의의 코드를 생성합니다. 사용자 정의가 가능하고 다재다능합니다.</a></p>
 </div>
 <!-- Item -->
 <div class="grid gap-4 rounded-md border border-solid border-gray-300 p-8 md:p-10">
-<a href="/random-generator/random-dinner-generator.html"><img alt="" class="inline-block h-16 w-16 object-cover" src="/public/images/lists/dinner.png"/></a>
-<h3 class="text-xl font-semibold"><a data-translate-id="content_title_64" data-translate-repeat="false" href="/random-generator/random-dinner-generator.html">무작위 저녁 식사 생성기</a></h3>
-<p class="text-sm text-gray-500"><a data-translate-id="content_desc_64" data-translate-repeat="false" href="/random-generator/random-dinner-generator.html">영감을 얻거나 재미있는 식사 계획을 위한 무작위 저녁 식사 아이디어를 생성하세요.</a></p>
+<a href="/random-generator/ko/random-dinner-generator.html"><img alt="" class="inline-block h-16 w-16 object-cover" src="/public/images/lists/dinner.png"/></a>
+<h3 class="text-xl font-semibold"><a data-translate-id="content_title_64" data-translate-repeat="false" href="/random-generator/ko/random-dinner-generator.html">무작위 저녁 식사 생성기</a></h3>
+<p class="text-sm text-gray-500"><a data-translate-id="content_desc_64" data-translate-repeat="false" href="/random-generator/ko/random-dinner-generator.html">영감을 얻거나 재미있는 식사 계획을 위한 무작위 저녁 식사 아이디어를 생성하세요.</a></p>
 </div>
 <!-- Item -->
 <div class="grid gap-4 rounded-md border border-solid border-gray-300 p-8 md:p-10">
-<a href="/random-generator/random-dnd-character-generator.html"><img alt="" class="inline-block h-16 w-16 object-cover" src="/public/images/lists/dndcharacter.png"/></a>
-<h3 class="text-xl font-semibold"><a data-translate-id="content_title_65" data-translate-repeat="false" href="/random-generator/random-dnd-character-generator.html">무작위 DND 문자 생성기</a></h3>
-<p class="text-sm text-gray-500"><a data-translate-id="content_desc_65" data-translate-repeat="false" href="/random-generator/random-dnd-character-generator.html">특성과 배경 스토리가 포함된 캠페인용 무작위 DnD 캐릭터를 생성하세요.</a></p>
+<a href="/random-generator/ko/random-dnd-character-generator.html"><img alt="" class="inline-block h-16 w-16 object-cover" src="/public/images/lists/dndcharacter.png"/></a>
+<h3 class="text-xl font-semibold"><a data-translate-id="content_title_65" data-translate-repeat="false" href="/random-generator/ko/random-dnd-character-generator.html">무작위 DND 문자 생성기</a></h3>
+<p class="text-sm text-gray-500"><a data-translate-id="content_desc_65" data-translate-repeat="false" href="/random-generator/ko/random-dnd-character-generator.html">특성과 배경 스토리가 포함된 캠페인용 무작위 DnD 캐릭터를 생성하세요.</a></p>
 </div>
 <!-- Item -->
 <div class="grid gap-4 rounded-md border border-solid border-gray-300 p-8 md:p-10">
-<a href="/random-generator/random-facts-generator.html"><img alt="" class="inline-block h-16 w-16 object-cover" src="/public/images/lists/facts.png"/></a>
-<h3 class="text-xl font-semibold"><a data-translate-id="content_title_66" data-translate-repeat="false" href="/random-generator/random-facts-generator.html">무작위 사실 생성기</a></h3>
-<p class="text-sm text-gray-500"><a data-translate-id="content_desc_66" data-translate-repeat="false" href="/random-generator/random-facts-generator.html">배우고, 공유하고, 즐길 수 있는 무작위 사실을 생성하세요. 퀴즈 및 일반 지식을 찾는 사람들에게 적합합니다.</a></p>
+<a href="/random-generator/ko/random-facts-generator.html"><img alt="" class="inline-block h-16 w-16 object-cover" src="/public/images/lists/facts.png"/></a>
+<h3 class="text-xl font-semibold"><a data-translate-id="content_title_66" data-translate-repeat="false" href="/random-generator/ko/random-facts-generator.html">무작위 사실 생성기</a></h3>
+<p class="text-sm text-gray-500"><a data-translate-id="content_desc_66" data-translate-repeat="false" href="/random-generator/ko/random-facts-generator.html">배우고, 공유하고, 즐길 수 있는 무작위 사실을 생성하세요. 퀴즈 및 일반 지식을 찾는 사람들에게 적합합니다.</a></p>
 </div>
 <!-- Item -->
 <div class="grid gap-4 rounded-md border border-solid border-gray-300 p-8 md:p-10">
-<a href="/random-generator/random-japanese-name-generator.html"><img alt="" class="inline-block h-16 w-16 object-cover" src="/public/images/lists/japanesename.png"/></a>
-<h3 class="text-xl font-semibold"><a data-translate-id="content_title_68" data-translate-repeat="false" href="/random-generator/random-japanese-name-generator.html">무작위 일본 이름 생성기</a></h3>
-<p class="text-sm text-gray-500"><a data-translate-id="content_desc_68" data-translate-repeat="false" href="/random-generator/random-japanese-name-generator.html">창의적인 프로젝트, 캐릭터 또는 학습을 위해 임의의 일본어 이름을 생성합니다.</a></p>
+<a href="/random-generator/ko/random-japanese-name-generator.html"><img alt="" class="inline-block h-16 w-16 object-cover" src="/public/images/lists/japanesename.png"/></a>
+<h3 class="text-xl font-semibold"><a data-translate-id="content_title_68" data-translate-repeat="false" href="/random-generator/ko/random-japanese-name-generator.html">무작위 일본 이름 생성기</a></h3>
+<p class="text-sm text-gray-500"><a data-translate-id="content_desc_68" data-translate-repeat="false" href="/random-generator/ko/random-japanese-name-generator.html">창의적인 프로젝트, 캐릭터 또는 학습을 위해 임의의 일본어 이름을 생성합니다.</a></p>
 </div>
 <!-- Item -->
 <div class="grid gap-4 rounded-md border border-solid border-gray-300 p-8 md:p-10">
-<a href="/random-generator/random-pose-generator.html"><img alt="" class="inline-block h-16 w-16 object-cover" src="/public/images/lists/pose.png"/></a>
-<h3 class="text-xl font-semibold"><a data-translate-id="content_title_69" data-translate-repeat="false" href="/random-generator/random-pose-generator.html">무작위 포즈 생성기</a></h3>
-<p class="text-sm text-gray-500"><a data-translate-id="content_desc_69" data-translate-repeat="false" href="/random-generator/random-pose-generator.html">그림, 사진 또는 창의적인 프로젝트를 위한 임의의 포즈를 생성합니다.</a></p>
+<a href="/random-generator/ko/random-pose-generator.html"><img alt="" class="inline-block h-16 w-16 object-cover" src="/public/images/lists/pose.png"/></a>
+<h3 class="text-xl font-semibold"><a data-translate-id="content_title_69" data-translate-repeat="false" href="/random-generator/ko/random-pose-generator.html">무작위 포즈 생성기</a></h3>
+<p class="text-sm text-gray-500"><a data-translate-id="content_desc_69" data-translate-repeat="false" href="/random-generator/ko/random-pose-generator.html">그림, 사진 또는 창의적인 프로젝트를 위한 임의의 포즈를 생성합니다.</a></p>
 </div>
 <!-- Item -->
 <div class="grid gap-4 rounded-md border border-solid border-gray-300 p-8 md:p-10">
-<a href="/random-generator/random-word-generator-for-songs.html"><img alt="" class="inline-block h-16 w-16 object-cover" src="/public/images/lists/wordforsongs.png"/></a>
-<h3 class="text-xl font-semibold"><a data-translate-id="content_title_70" data-translate-repeat="false" href="/random-generator/random-word-generator-for-songs.html">노래에 대한 임의의 단어 생성기</a></h3>
-<p class="text-sm text-gray-500"><a data-translate-id="content_desc_70" data-translate-repeat="false" href="/random-generator/random-word-generator-for-songs.html">작곡에 대한 아이디어와 영감을 불러일으키는 임의의 단어를 생성하세요.</a></p>
+<a href="/random-generator/ko/random-word-generator-for-songs.html"><img alt="" class="inline-block h-16 w-16 object-cover" src="/public/images/lists/wordforsongs.png"/></a>
+<h3 class="text-xl font-semibold"><a data-translate-id="content_title_70" data-translate-repeat="false" href="/random-generator/ko/random-word-generator-for-songs.html">노래에 대한 임의의 단어 생성기</a></h3>
+<p class="text-sm text-gray-500"><a data-translate-id="content_desc_70" data-translate-repeat="false" href="/random-generator/ko/random-word-generator-for-songs.html">작곡에 대한 아이디어와 영감을 불러일으키는 임의의 단어를 생성하세요.</a></p>
 </div>
 <!-- Item -->
 <div class="grid gap-4 rounded-md border border-solid border-gray-300 p-8 md:p-10">
-<a href="/random-generator/generate-random-ip.html"><img alt="" class="inline-block h-16 w-16 object-cover" src="/public/images/lists/ip.png"/></a>
-<h3 class="text-xl font-semibold"><a data-translate-id="content_title_71" data-translate-repeat="false" href="/random-generator/generate-random-ip.html">무작위 IP 생성</a></h3>
-<p class="text-sm text-gray-500"><a data-translate-id="content_desc_71" data-translate-repeat="false" href="/random-generator/generate-random-ip.html">테스트, 보안 또는 네트워킹 목적으로 임의의 IP 주소를 생성합니다.</a></p>
+<a href="/random-generator/ko/generate-random-ip.html"><img alt="" class="inline-block h-16 w-16 object-cover" src="/public/images/lists/ip.png"/></a>
+<h3 class="text-xl font-semibold"><a data-translate-id="content_title_71" data-translate-repeat="false" href="/random-generator/ko/generate-random-ip.html">무작위 IP 생성</a></h3>
+<p class="text-sm text-gray-500"><a data-translate-id="content_desc_71" data-translate-repeat="false" href="/random-generator/ko/generate-random-ip.html">테스트, 보안 또는 네트워킹 목적으로 임의의 IP 주소를 생성합니다.</a></p>
 </div>
 <!-- Item -->
 <div class="grid gap-4 rounded-md border border-solid border-gray-300 p-8 md:p-10">
-<a href="/random-generator/pokemon-random-type-generator.html"><img alt="" class="inline-block h-16 w-16 object-cover" src="/public/images/lists/pokemontype.png"/></a>
-<h3 class="text-xl font-semibold"><a data-translate-id="content_title_73" data-translate-repeat="false" href="/random-generator/pokemon-random-type-generator.html">포켓몬 랜덤 유형 생성기</a></h3>
-<p class="text-sm text-gray-500"><a data-translate-id="content_desc_73" data-translate-repeat="false" href="/random-generator/pokemon-random-type-generator.html">전투, 게임 또는 창의적인 프로젝트를 위해 무작위 포켓몬 유형을 생성합니다.</a></p>
+<a href="/random-generator/ko/pokemon-random-type-generator.html"><img alt="" class="inline-block h-16 w-16 object-cover" src="/public/images/lists/pokemontype.png"/></a>
+<h3 class="text-xl font-semibold"><a data-translate-id="content_title_73" data-translate-repeat="false" href="/random-generator/ko/pokemon-random-type-generator.html">포켓몬 랜덤 유형 생성기</a></h3>
+<p class="text-sm text-gray-500"><a data-translate-id="content_desc_73" data-translate-repeat="false" href="/random-generator/ko/pokemon-random-type-generator.html">전투, 게임 또는 창의적인 프로젝트를 위해 무작위 포켓몬 유형을 생성합니다.</a></p>
 </div>
 <!-- Item -->
 <div class="grid gap-4 rounded-md border border-solid border-gray-300 p-8 md:p-10">
-<a href="/random-generator/powerball-random-number-generator.html"><img alt="" class="inline-block h-16 w-16 object-cover" src="/public/images/lists/"/></a>
-<h3 class="text-xl font-semibold"><a data-translate-id="content_title_74" data-translate-repeat="false" href="/random-generator/powerball-random-number-generator.html">파워볼 난수 생성기</a></h3>
-<p class="text-sm text-gray-500"><a data-translate-id="content_desc_74" data-translate-repeat="false" href="/random-generator/powerball-random-number-generator.html">복권 게임이나 재미를 위해 임의의 파워볼 번호를 생성하세요.</a></p>
+<a href="/random-generator/ko/powerball-random-number-generator.html"><img alt="" class="inline-block h-16 w-16 object-cover" src="/public/images/lists/"/></a>
+<h3 class="text-xl font-semibold"><a data-translate-id="content_title_74" data-translate-repeat="false" href="/random-generator/ko/powerball-random-number-generator.html">파워볼 난수 생성기</a></h3>
+<p class="text-sm text-gray-500"><a data-translate-id="content_desc_74" data-translate-repeat="false" href="/random-generator/ko/powerball-random-number-generator.html">복권 게임이나 재미를 위해 임의의 파워볼 번호를 생성하세요.</a></p>
 </div>
 </div>
 </section>
@@ -421,6 +450,33 @@
 </svg>
 <p class="font-inter ml-4 text-white text-left">support@randomgenerator.tools</p>
 </div>
+<div class="flex flex-col items-start ml-4 mt-4">
+<div class="relative inline-block text-left mt-2">
+<div>
+<button class="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-black text-sm font-medium text-white hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" onclick="toggleMenu('footer-language-menu')" type="button">
+                Language
+                <svg aria-hidden="true" class="-mr-1 ml-2 h-5 w-5" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" fill-rule="evenodd"></path>
+</svg>
+</button>
+</div>
+<div class="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-black ring-1 ring-white ring-opacity-5 focus:outline-none hidden" id="footer-language-menu">
+<div aria-labelledby="options-menu" aria-orientation="vertical" class="py-1" role="menu">
+<a class="block px-4 py-2 text-sm text-white hover:bg-gray-800 hover:text-white" href="/index.html" role="menuitem">English (英文)</a>
+<a class="block px-4 py-2 text-sm text-white hover:bg-gray-800 hover:text-white" href="/es/index.html" role="menuitem">Español (西班牙语)</a>
+<a class="block px-4 py-2 text-sm text-white hover:bg-gray-800 hover:text-white" href="/zh-cn/index.html" role="menuitem">中文 (简体)</a>
+<a class="block px-4 py-2 text-sm text-white hover:bg-gray-800 hover:text-white" href="/zh-tw/index.html" role="menuitem">中文 (繁体)</a>
+<a class="block px-4 py-2 text-sm text-white hover:bg-gray-800 hover:text-white" href="/fr/index.html" role="menuitem">Français (法语)</a>
+<a class="block px-4 py-2 text-sm text-white hover:bg-gray-800 hover:text-white" href="/de/index.html" role="menuitem">Deutsch (德语)</a>
+<a class="block px-4 py-2 text-sm text-white hover:bg-gray-800 hover:text-white" href="/ja/index.html" role="menuitem">日本語 (日语)</a>
+<a class="block px-4 py-2 text-sm text-white hover:bg-gray-800 hover:text-white" href="/ar/index.html" role="menuitem">العربية (阿拉伯语)</a>
+<a class="block px-4 py-2 text-sm text-white hover:bg-gray-800 hover:text-white" href="/pt/index.html" role="menuitem">Português (葡萄牙语)</a>
+<a class="block px-4 py-2 text-sm text-white hover:bg-gray-800 hover:text-white" href="/ko/index.html" role="menuitem">한국어 (韩语)</a>
+<a class="block px-4 py-2 text-sm text-white hover:bg-gray-800 hover:text-white" href="/ru/index.html" role="menuitem">Русский (俄语)</a>
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 <!-- DIVIDER -->
@@ -430,6 +486,13 @@
 <p class="font-inter text-center text-sm text-gray-400 lg:mt-0" data-translate-id="copyright" data-translate-repeat="true">© 저작권 2024. 모든 권리 보유.</p>
 </div>
 </div>
-</footer> </footer>
+</footer>
+</footer>
+<script>
+  function toggleMenu(menuId) {
+    const menu = document.getElementById(menuId);
+    menu.classList.toggle('hidden');
+  }
+  </script>
 </body>
 </html>

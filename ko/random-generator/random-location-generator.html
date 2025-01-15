@@ -55,13 +55,42 @@
 <a class="font-inter lg: rounded-lg pb-8 lg:px-6 lg:py-4 lg:hover:bg-gray-100 transition-colors duration-200" data-translate-id="game_generator" data-translate-repeat="true" href="https://randomgenerator.tools/ko/random-generator/random-game-generator.html">게임 생성기</a>
 <a class="font-inter lg: rounded-lg pb-8 lg:px-6 lg:py-4 lg:hover:bg-gray-100 transition-colors duration-200" data-translate-id="state_generator" data-translate-repeat="true" href="https://randomgenerator.tools/ko/random-generator/random-state-generator.html">상태 생성기</a>
 </div>
-<div class="flex flex-col space-y-8 lg:flex lg:flex-row lg:space-x-3 lg:space-y-0">
-<a class="font-inter rounded-lg bg-gray-200 px-8 py-4 text-center hover:bg-gray-800 hover:text-white" data-translate-id="sign_up" data-translate-repeat="true" href="#">가입</a>
-<a class="font-inter rounded-lg bg-green-500 px-8 py-4 text-center text-white hover:bg-gray-800" data-translate-id="login" data-translate-repeat="true" href="#">로그인</a>
+<div class="flex items-center">
+<div class="relative inline-block text-left">
+<div>
+<button class="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" onclick="toggleMenu('header-language-menu')" type="button">
+              Language
+              <svg aria-hidden="true" class="-mr-1 ml-2 h-5 w-5" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" fill-rule="evenodd"></path>
+</svg>
+</button>
+</div>
+<div class="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none hidden" id="header-language-menu">
+<div aria-labelledby="options-menu" aria-orientation="vertical" class="py-1" role="menu">
+<a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" href="/index.html" role="menuitem">English (英文)</a>
+<a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" href="/es/index.html" role="menuitem">Español (西班牙语)</a>
+<a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" href="/zh-cn/index.html" role="menuitem">中文 (简体)</a>
+<a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" href="/zh-tw/index.html" role="menuitem">中文 (繁体)</a>
+<a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" href="/fr/index.html" role="menuitem">Français (法语)</a>
+<a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" href="/de/index.html" role="menuitem">Deutsch (德语)</a>
+<a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" href="/ja/index.html" role="menuitem">日本語 (日语)</a>
+<a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" href="/ar/index.html" role="menuitem">العربية (阿拉伯语)</a>
+<a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" href="/pt/index.html" role="menuitem">Português (葡萄牙语)</a>
+<a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" href="/ko/index.html" role="menuitem">한국어 (韩语)</a>
+<a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" href="/ru/index.html" role="menuitem">Русский (俄语)</a>
+</div>
+</div>
+</div>
 </div>
 </div>
 </nav>
-</section> </header>
+</section>
+<script>
+function toggleMenu() {
+  const menu = document.getElementById('language-menu');
+  menu.classList.toggle('hidden');
+}
+</script> </header>
 <main class="container mx-auto px-6 py-4">
 <!--hero start-->
 <section>
@@ -286,7 +315,7 @@
 </section>
 <!---q&a end----->
 <!-------------json-data-start------>
-<div data="" data-json='["Paris","New York","Tokyo","London","Rome","Sydney","Berlin","Los Angeles","Moscow","Dubai","Shanghai","Bangkok","Cairo","Cape Town","Mexico City","Singapore","Hong Kong","Rio de Janeiro","Amsterdam","Barcelona","Istanbul","Dubai","Seoul","San Francisco","Madrid","Lisbon","Montreal","Toronto","Milan","Athens","Prague","Vienna","Zurich","Oslo","Stockholm","Stockholm","Dubai","Buenos Aires","Sao Paulo","Lagos","Dubai","Beijing","Helsinki","Havana","Kuala Lumpur","Copenhagen","Dubai","Los Angeles","Miami","Dubai","Brussels","Kigali","Vancouver","Tel Aviv","Lagos","Paris","Tokyo","San Diego","London","Seattle","Dublin","Los Angeles","Mexico City","Rome","Sydney","Berlin","Vienna","Bali","Athens","Madrid","Chicago","Montreal","Milan","Barcelona","Hong Kong","Moscow","Cape Town","Rio de Janeiro","Istanbul","Bangkok","Shanghai","Singapore","Paris","New York","Los Angeles","Dubai","London","Rome","Seoul","Toronto","Vancouver","Dublin","Brussels","Copenhagen","Tel Aviv","Kuala Lumpur","Helsinki","Cape Town","Sao Paulo","Tokyo","Mexico City","Shanghai","Sydney","Milan","Montreal","Barcelona","Chicago","Istanbul","Beijing","Berlin","Havana","Rio de Janeiro"]' data-translate-id="jsonData" data-translate-repeat="false" id="jsonData">["파리", "뉴욕", "도쿄", "런던", "로마", "시드니", "베를린", "로스앤젤레스", "모스크바", "두바이", "상하이", "방콕", "카이로", "케이프타운", "멕시코시티", "싱가포르", "홍콩", "리우데자네이루", "암스테르담", "바르셀로나", "이스탄불", "두바이", "서울", "샌프란시스코", "마드리드", "리스본", "몬트리올", "토론토", "밀라노", "아테네", "프라하", "비엔나", "취리히", "오슬로", "스톡홀름", "스톡홀름", "두바이", "부에노스아이레스", "상파울로", "라고스", "두바이", "베이징", "헬싱키", "하바나", "쿠알라룸푸르", "코펜하겐", "두바이", "로스앤젤레스", "마이애미", "두바이", "브뤼셀", "키갈리", "밴쿠버", "텔아비브", "라고스", "파리", "도쿄", "샌디에고", "런던", "시애틀", "더블린", "로스앤젤레스", "멕시코시티", "로마", "시드니", "베를린", "비엔나", "발리", "아테네", "마드리드", "시카고", "몬트리올", "밀라노", "바르셀로나", "홍콩", "모스크바", "케이프타운", "리우데자네이루", "이스탄불", "방콕", "상하이", "싱가포르", "파리", "뉴욕", "로스앤젤레스", "두바이", "런던", "로마", "서울", "토론토", "밴쿠버", "더블린", "브뤼셀", "코펜하겐", "텔아비브", "쿠알라룸푸르", "헬싱키", "케이프타운", "상파울로", "도쿄", "멕시코시티", "상하이", "시드니", "밀라노", "몬트리올", "바르셀로나", "시카고", "이스탄불", "베이징", "베를린", "하바나", "리우데자네이루"]</div>
+<div data-json='["Paris","New York","Tokyo","London","Rome","Sydney","Berlin","Los Angeles","Moscow","Dubai","Shanghai","Bangkok","Cairo","Cape Town","Mexico City","Singapore","Hong Kong","Rio de Janeiro","Amsterdam","Barcelona","Istanbul","Dubai","Seoul","San Francisco","Madrid","Lisbon","Montreal","Toronto","Milan","Athens","Prague","Vienna","Zurich","Oslo","Stockholm","Stockholm","Dubai","Buenos Aires","Sao Paulo","Lagos","Dubai","Beijing","Helsinki","Havana","Kuala Lumpur","Copenhagen","Dubai","Los Angeles","Miami","Dubai","Brussels","Kigali","Vancouver","Tel Aviv","Lagos","Paris","Tokyo","San Diego","London","Seattle","Dublin","Los Angeles","Mexico City","Rome","Sydney","Berlin","Vienna","Bali","Athens","Madrid","Chicago","Montreal","Milan","Barcelona","Hong Kong","Moscow","Cape Town","Rio de Janeiro","Istanbul","Bangkok","Shanghai","Singapore","Paris","New York","Los Angeles","Dubai","London","Rome","Seoul","Toronto","Vancouver","Dublin","Brussels","Copenhagen","Tel Aviv","Kuala Lumpur","Helsinki","Cape Town","Sao Paulo","Tokyo","Mexico City","Shanghai","Sydney","Milan","Montreal","Barcelona","Chicago","Istanbul","Beijing","Berlin","Havana","Rio de Janeiro"]' data-translate-id="jsonData" data-translate-repeat="false" id="jsonData">["파리", "뉴욕", "도쿄", "런던", "로마", "시드니", "베를린", "로스앤젤레스", "모스크바", "두바이", "상하이", "방콕", "카이로", "케이프타운", "멕시코시티", "싱가포르", "홍콩", "리우데자네이루", "암스테르담", "바르셀로나", "이스탄불", "두바이", "서울", "샌프란시스코", "마드리드", "리스본", "몬트리올", "토론토", "밀라노", "아테네", "프라하", "비엔나", "취리히", "오슬로", "스톡홀름", "스톡홀름", "두바이", "부에노스아이레스", "상파울로", "라고스", "두바이", "베이징", "헬싱키", "하바나", "쿠알라룸푸르", "코펜하겐", "두바이", "로스앤젤레스", "마이애미", "두바이", "브뤼셀", "키갈리", "밴쿠버", "텔아비브", "라고스", "파리", "도쿄", "샌디에고", "런던", "시애틀", "더블린", "로스앤젤레스", "멕시코시티", "로마", "시드니", "베를린", "비엔나", "발리", "아테네", "마드리드", "시카고", "몬트리올", "밀라노", "바르셀로나", "홍콩", "모스크바", "케이프타운", "리우데자네이루", "이스탄불", "방콕", "상하이", "싱가포르", "파리", "뉴욕", "로스앤젤레스", "두바이", "런던", "로마", "서울", "토론토", "밴쿠버", "더블린", "브뤼셀", "코펜하겐", "텔아비브", "쿠알라룸푸르", "헬싱키", "케이프타운", "상파울로", "도쿄", "멕시코시티", "상하이", "시드니", "밀라노", "몬트리올", "바르셀로나", "시카고", "이스탄불", "베이징", "베를린", "하바나", "리우데자네이루"]</div>
 <!-------------json-data-end------>
 <!---footer start----->
 </main>
@@ -377,6 +406,33 @@
 </svg>
 <p class="font-inter ml-4 text-white text-left">support@randomgenerator.tools</p>
 </div>
+<div class="flex flex-col items-start ml-4 mt-4">
+<div class="relative inline-block text-left mt-2">
+<div>
+<button class="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-black text-sm font-medium text-white hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" onclick="toggleMenu('footer-language-menu')" type="button">
+                Language
+                <svg aria-hidden="true" class="-mr-1 ml-2 h-5 w-5" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" fill-rule="evenodd"></path>
+</svg>
+</button>
+</div>
+<div class="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-black ring-1 ring-white ring-opacity-5 focus:outline-none hidden" id="footer-language-menu">
+<div aria-labelledby="options-menu" aria-orientation="vertical" class="py-1" role="menu">
+<a class="block px-4 py-2 text-sm text-white hover:bg-gray-800 hover:text-white" href="/index.html" role="menuitem">English (英文)</a>
+<a class="block px-4 py-2 text-sm text-white hover:bg-gray-800 hover:text-white" href="/es/index.html" role="menuitem">Español (西班牙语)</a>
+<a class="block px-4 py-2 text-sm text-white hover:bg-gray-800 hover:text-white" href="/zh-cn/index.html" role="menuitem">中文 (简体)</a>
+<a class="block px-4 py-2 text-sm text-white hover:bg-gray-800 hover:text-white" href="/zh-tw/index.html" role="menuitem">中文 (繁体)</a>
+<a class="block px-4 py-2 text-sm text-white hover:bg-gray-800 hover:text-white" href="/fr/index.html" role="menuitem">Français (法语)</a>
+<a class="block px-4 py-2 text-sm text-white hover:bg-gray-800 hover:text-white" href="/de/index.html" role="menuitem">Deutsch (德语)</a>
+<a class="block px-4 py-2 text-sm text-white hover:bg-gray-800 hover:text-white" href="/ja/index.html" role="menuitem">日本語 (日语)</a>
+<a class="block px-4 py-2 text-sm text-white hover:bg-gray-800 hover:text-white" href="/ar/index.html" role="menuitem">العربية (阿拉伯语)</a>
+<a class="block px-4 py-2 text-sm text-white hover:bg-gray-800 hover:text-white" href="/pt/index.html" role="menuitem">Português (葡萄牙语)</a>
+<a class="block px-4 py-2 text-sm text-white hover:bg-gray-800 hover:text-white" href="/ko/index.html" role="menuitem">한국어 (韩语)</a>
+<a class="block px-4 py-2 text-sm text-white hover:bg-gray-800 hover:text-white" href="/ru/index.html" role="menuitem">Русский (俄语)</a>
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 <!-- DIVIDER -->
@@ -386,14 +442,18 @@
 <p class="font-inter text-center text-sm text-gray-400 lg:mt-0" data-translate-id="copyright" data-translate-repeat="true">© 저작권 2024. 모든 권리 보유.</p>
 </div>
 </div>
-</footer> </footer>
+</footer>
+</footer>
 <script>
+        function toggleMenu(menuId) {
+            const menu = document.getElementById(menuId);
+            menu.classList.toggle('hidden');
+        }
+        const jsonDiv = document.getElementById('jsonData');
+       
+        const Groups1 = JSON.parse(jsonDiv.getAttribute('data-json'));
 
-       // const Groups1 = ["Paris","New York","Tokyo","London","Rome","Sydney","Berlin","Los Angeles","Moscow","Dubai","Shanghai","Bangkok","Cairo","Cape Town","Mexico City","Singapore","Hong Kong","Rio de Janeiro","Amsterdam","Barcelona","Istanbul","Dubai","Seoul","San Francisco","Madrid","Lisbon","Montreal","Toronto","Milan","Athens","Prague","Vienna","Zurich","Oslo","Stockholm","Stockholm","Dubai","Buenos Aires","Sao Paulo","Lagos","Dubai","Beijing","Helsinki","Havana","Kuala Lumpur","Copenhagen","Dubai","Los Angeles","Miami","Dubai","Brussels","Kigali","Vancouver","Tel Aviv","Lagos","Paris","Tokyo","San Diego","London","Seattle","Dublin","Los Angeles","Mexico City","Rome","Sydney","Berlin","Vienna","Bali","Athens","Madrid","Chicago","Montreal","Milan","Barcelona","Hong Kong","Moscow","Cape Town","Rio de Janeiro","Istanbul","Bangkok","Shanghai","Singapore","Paris","New York","Los Angeles","Dubai","London","Rome","Seoul","Toronto","Vancouver","Dublin","Brussels","Copenhagen","Tel Aviv","Kuala Lumpur","Helsinki","Cape Town","Sao Paulo","Tokyo","Mexico City","Shanghai","Sydney","Milan","Montreal","Barcelona","Chicago","Istanbul","Beijing","Berlin","Havana","Rio de Janeiro"];
-        var jsonDiv = document.getElementById('jsonData');
-        const Groups1  = jsonDiv.getAttribute('data-json');
-        console.log('Groups:', Groups1);
-
+        
     </script>
 <script src="/public/js/default_random_generate.js"></script>
 </footer></body>

@@ -55,13 +55,42 @@
 <a class="font-inter lg: rounded-lg pb-8 lg:px-6 lg:py-4 lg:hover:bg-gray-100 transition-colors duration-200" data-translate-id="game_generator" data-translate-repeat="true" href="https://randomgenerator.tools/es/random-generator/random-game-generator.html">generador de juegos</a>
 <a class="font-inter lg: rounded-lg pb-8 lg:px-6 lg:py-4 lg:hover:bg-gray-100 transition-colors duration-200" data-translate-id="state_generator" data-translate-repeat="true" href="https://randomgenerator.tools/es/random-generator/random-state-generator.html">generador de estado</a>
 </div>
-<div class="flex flex-col space-y-8 lg:flex lg:flex-row lg:space-x-3 lg:space-y-0">
-<a class="font-inter rounded-lg bg-gray-200 px-8 py-4 text-center hover:bg-gray-800 hover:text-white" data-translate-id="sign_up" data-translate-repeat="true" href="#">Inscribirse</a>
-<a class="font-inter rounded-lg bg-green-500 px-8 py-4 text-center text-white hover:bg-gray-800" data-translate-id="login" data-translate-repeat="true" href="#">Acceso</a>
+<div class="flex items-center">
+<div class="relative inline-block text-left">
+<div>
+<button class="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" onclick="toggleMenu('header-language-menu')" type="button">
+              Language
+              <svg aria-hidden="true" class="-mr-1 ml-2 h-5 w-5" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" fill-rule="evenodd"></path>
+</svg>
+</button>
+</div>
+<div class="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none hidden" id="header-language-menu">
+<div aria-labelledby="options-menu" aria-orientation="vertical" class="py-1" role="menu">
+<a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" href="/index.html" role="menuitem">English (英文)</a>
+<a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" href="/es/index.html" role="menuitem">Español (西班牙语)</a>
+<a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" href="/zh-cn/index.html" role="menuitem">中文 (简体)</a>
+<a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" href="/zh-tw/index.html" role="menuitem">中文 (繁体)</a>
+<a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" href="/fr/index.html" role="menuitem">Français (法语)</a>
+<a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" href="/de/index.html" role="menuitem">Deutsch (德语)</a>
+<a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" href="/ja/index.html" role="menuitem">日本語 (日语)</a>
+<a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" href="/ar/index.html" role="menuitem">العربية (阿拉伯语)</a>
+<a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" href="/pt/index.html" role="menuitem">Português (葡萄牙语)</a>
+<a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" href="/ko/index.html" role="menuitem">한국어 (韩语)</a>
+<a class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" href="/ru/index.html" role="menuitem">Русский (俄语)</a>
+</div>
+</div>
+</div>
 </div>
 </div>
 </nav>
-</section> </header>
+</section>
+<script>
+function toggleMenu() {
+  const menu = document.getElementById('language-menu');
+  menu.classList.toggle('hidden');
+}
+</script> </header>
 <main class="container mx-auto px-6 py-4">
 <!--hero start-->
 <section>
@@ -247,31 +276,31 @@
 <div class="grid gap-5 sm:grid-cols-2 md:grid-cols-3 md:gap-4 lg:gap-6">
 <div class="grid gap-4 rounded-md border border-solid border-gray-200 p-6">
 <div class="flex items-start">
-<div class="text-[#9B59B6]"><svg class="h-12 w-12" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 10V3L4 14h7v7l9-11h-7z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></div>
+<div class="text-[#E74C3C]"><svg class="h-12 w-12" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></div>
 </div>
 <p class="text-sm text-gray-600 text-left" data-translate-id="features_content_1" data-translate-repeat="false">Amplia variedad de estilos</p>
 </div>
 <div class="grid gap-4 rounded-md border border-solid border-gray-200 p-6">
 <div class="flex items-start">
-<div class="text-[#2ECC71]"><svg class="h-12 w-12" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></div>
+<div class="text-[#1ABC9C]"><svg enable-background="new 0 0 24 24" fill="#5985E1" height="48px" viewbox="0 0 24 24" width="48px" xmlns="http://www.w3.org/2000/svg"><g><rect fill="none" height="24" width="24"></rect></g><g><g><g><path d="M2.5,19h19v2h-19V19z M22.07,9.64c-0.21-0.8-1.04-1.28-1.84-1.06L14.92,10l-6.9-6.43L6.09,4.08l4.14,7.17l-4.97,1.33 l-1.97-1.54l-1.45,0.39l2.59,4.49c0,0,7.12-1.9,16.57-4.43C21.81,11.26,22.28,10.44,22.07,9.64z"></path></g></g></g></svg></div>
 </div>
 <p class="text-sm text-gray-600 text-left" data-translate-id="features_content_2" data-translate-repeat="false">Sugerencias rápidas de vestimenta</p>
 </div>
 <div class="grid gap-4 rounded-md border border-solid border-gray-200 p-6">
 <div class="flex items-start">
-<div class="text-[#34495E]"><svg fill="#5985E1" height="48px" viewbox="0 0 24 24" width="48px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M20 6h-2.18c.11-.31.18-.65.18-1 0-1.66-1.34-3-3-3-1.05 0-1.96.54-2.5 1.35l-.5.67-.5-.68C10.96 2.54 10.05 2 9 2 7.34 2 6 3.34 6 5c0 .35.07.69.18 1H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-5-2c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zM9 4c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm11 15H4v-2h16v2zm0-5H4V8h5.08L7 10.83 8.62 12 11 8.76l1-1.36 1 1.36L15.38 12 17 10.83 14.92 8H20v6z"></path></svg></div>
+<div class="text-[#F39C12]"><svg fill="#5985E1" height="48px" viewbox="0 0 24 24" width="48px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M20 6h-2.18c.11-.31.18-.65.18-1 0-1.66-1.34-3-3-3-1.05 0-1.96.54-2.5 1.35l-.5.67-.5-.68C10.96 2.54 10.05 2 9 2 7.34 2 6 3.34 6 5c0 .35.07.69.18 1H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-5-2c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zM9 4c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm11 15H4v-2h16v2zm0-5H4V8h5.08L7 10.83 8.62 12 11 8.76l1-1.36 1 1.36L15.38 12 17 10.83 14.92 8H20v6z"></path></svg></div>
 </div>
 <p class="text-sm text-gray-600 text-left" data-translate-id="features_content_3" data-translate-repeat="false">Preferencias personalizables</p>
 </div>
 <div class="grid gap-4 rounded-md border border-solid border-gray-200 p-6">
 <div class="flex items-start">
-<div class="text-[#E74C3C]"><svg enable-background="new 0 0 24 24" fill="#5985E1" height="48px" viewbox="0 0 24 24" width="48px" xmlns="http://www.w3.org/2000/svg"><g><rect fill="none" height="24" width="24"></rect></g><g><g><g><path d="M2.5,19h19v2h-19V19z M22.07,9.64c-0.21-0.8-1.04-1.28-1.84-1.06L14.92,10l-6.9-6.43L6.09,4.08l4.14,7.17l-4.97,1.33 l-1.97-1.54l-1.45,0.39l2.59,4.49c0,0,7.12-1.9,16.57-4.43C21.81,11.26,22.28,10.44,22.07,9.64z"></path></g></g></g></svg></div>
+<div class="text-[#2ECC71]"><svg fill="#5985E1" height="48px" viewbox="0 0 24 24" width="48px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M3 3h8v8H3zm10 0h8v8h-8zM3 13h8v8H3zm15 0h-2v3h-3v2h3v3h2v-3h3v-2h-3z"></path></svg></div>
 </div>
 <p class="text-sm text-gray-600 text-left" data-translate-id="features_content_4" data-translate-repeat="false">Diseño compatible con dispositivos móviles</p>
 </div>
 <div class="grid gap-4 rounded-md border border-solid border-gray-200 p-6">
 <div class="flex items-start">
-<div class="text-[#F39C12]"><svg fill="#5985E1" height="48px" viewbox="0 0 24 24" width="48px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M3 3h8v8H3zm10 0h8v8h-8zM3 13h8v8H3zm15 0h-2v3h-3v2h3v3h2v-3h3v-2h-3z"></path></svg></div>
+<div class="text-[#9B59B6]"><svg class="h-12 w-12" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 10V3L4 14h7v7l9-11h-7z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></div>
 </div>
 <p class="text-sm text-gray-600 text-left" data-translate-id="features_content_5" data-translate-repeat="false">Tendencias de moda actualizadas.</p>
 </div>
@@ -316,7 +345,7 @@
 </section>
 <!---q&a end----->
 <!-------------json-data-start------>
-<div data="" data-json='["Casual T-shirt with jeans","Leather jacket and boots","Button-up shirt with khakis","Sweater and leggings","Blazer with dress pants","Flannel shirt and denim jeans","Hoodie with sweatpants","Maxi dress with sandals","Polo shirt with shorts","Tank top and skirt","V-neck sweater with jeans","Cargo pants with a graphic tee","Leather boots with a dress","Blouse with a pencil skirt","Oversized sweater with skinny jeans","Cropped top with high-waisted jeans","Puffer jacket and joggers","Bomber jacket with a hoodie","Plaid shirt with distressed jeans","Peacoat with wool scarf","Trench coat and boots","Chinos with a casual button-up shirt","Cardigan with a flowy skirt","Short-sleeve shirt with shorts","Linen shirt with chinos","Denim jacket and black pants","Athletic shorts with a sports bra","Long-sleeve blouse with pencil skirt","Turtleneck and corduroy pants","Jumpsuit with ankle boots","Puffer vest with jeans","Sweater dress with tights","Slip dress with a leather jacket","Ripped jeans with a band tee","Ruffled blouse with high-waisted shorts","Camo jacket with leggings","Kimono with a tank top","Leather skirt with a sweater","Off-shoulder top with jeans","Cropped hoodie with high-waisted shorts","Tunic top with leggings","Wrap dress with heels","Racerback tank with cargo pants","Blazer with a t-shirt and jeans","V-neck blouse with a skirt","Fitted blazer with black jeans","T-shirt with a maxi skirt","Striped sweater with denim shorts","Peasant top with skinny jeans","Blouse with flared jeans","Open cardigan with a tank top","Sweatshirt and cargo shorts","Pinafore dress with a t-shirt","Skater dress with ankle boots","Henley shirt with chinos","Floral dress with a denim jacket","T-shirt with overalls","Mini skirt with a graphic tee","Plaid skirt with a blouse","Fleece jacket and leggings","Sporty tank with running shorts","Lightweight jacket with joggers","Boho dress with sandals","Sweater vest with a blouse","Belted coat with skinny jeans","Denim shirt with a skirt","Mesh top with high-waisted pants","Crop top with a plaid skirt","Denim shorts with a tank top","V-neck sweater with cargo pants","Floral blouse with white jeans","Lace top with a mini skirt","Cardigan with skinny jeans","T-shirt with a pleated skirt","Fuzzy sweater with leggings","Peacoat with plaid scarf","Cropped jacket with ripped jeans","Button-up dress with heels","Buttoned-up sweater with skirts","Long-sleeve t-shirt with leather pants","Kimono with a belt","Hooded sweatshirt with joggers","Cotton blouse with denim jeans","Flared sleeves with skinny jeans","Button-up dress with sneakers","V-neck dress with sandals","Athleisure leggings with hoodie","Plaid dress with tights","Tank dress with a denim jacket","Turtleneck sweater with a skirt","T-shirt with wide-legged pants","Bomber jacket with boots","Cowl neck sweater with pants","Knitted cardigan with a skirt"]' data-translate-id="jsonData" data-translate-repeat="false" id="jsonData">["Camiseta informal con vaqueros", "Chaqueta de cuero y botas", "Camisa abotonada con khakis", "Jersey y mallas", "Americana con pantalones de vestir", "Camisa de franela y vaqueros de mezclilla", "Sudadera con pantalones deportivos", "Vestido maxi con sandalias", "Polo con pantalones cortos", "Top sin mangas y falda", "Jersey de cuello en V con vaqueros", "Pantalones cargo con camiseta gráfica", "Botas de cuero con un vestido", "Blusa con una falda lápiz", "Jersey extragrande con vaqueros ajustados", "Top corto con vaqueros de talle alto", "Chaqueta acolchada y pantalones deportivos", "Chaqueta bomber con una sudadera", "Camisa de franela con vaqueros desgastados", "Abrigo de lana con bufanda de lana", "Gabardina y botas", "Chinos con una camisa informal abotonada", "Cárdigan con una falda vaporosa", "Camisa de manga corta con pantalones cortos", "Camisa de lino con chinos", "Chaqueta vaquera y pantalones negros", "Pantalones cortos deportivos con un sujetador deportivo", "Blusa de manga larga con falda lápiz", "Cuello de tortuga y pantalones de pana", "Mono con botines", "Chaleco acolchado con vaqueros", "Vestido de suéter con medias", "Vestido de tirantes con una chaqueta de cuero", "Vaqueros rasgados con una camiseta de banda", "Blusa fruncida con pantalones cortos de talle alto", "Chaquetón de camuflaje con mallas", "Kimono con un top sin mangas", "Falda de cuero con un jersey", "Top de hombros descubiertos con vaqueros", "Sudadera corta con pantalones cortos de talle alto", "Top túnica con mallas", "Vestido cruzado con tacones", "Top de tirantes con pantalones cargo", "Blazer con una camiseta y vaqueros", "Blusa de cuello en V con una falda", "Blazer ajustado con vaqueros negros", "Camiseta con una falda maxi", "Jersey a rayas con pantalones cortos vaqueros", "Top campesino con vaqueros ajustados", "Blusa con vaqueros acampanados", "Cárdigan abierto con un top sin mangas", "Sudadera y pantalones cortos cargo", "Vestido de tirantes con una camiseta", "Vestido skater con botines", "Camisa Henley con chinos", "Vestido floral con una chaqueta vaquera", "Camiseta con peto", "Minifalda con una camiseta gráfica", "Falda de cuadros con una blusa", "Chaqueta de forro polar y mallas", "Top deportivo con pantalones cortos para correr", "Chaqueta ligera con pantalones deportivos", "Vestido boho con sandalias", "Chaleco de punto con una blusa", "Abrigo con cinturón con vaqueros ajustados", "Camisa vaquera con una falda", "Top de malla con pantalones de talle alto", "Top corto con una falda de cuadros", "Pantalones cortos vaqueros con un top sin mangas", "Jersey de cuello en V con pantalones cargo", "Blusa floral con vaqueros blancos", "Top de encaje con una minifalda", "Cárdigan con vaqueros ajustados", "Camiseta con una falda plisada", "Jersey esponjoso con mallas", "Abrigo de lana con bufanda de cuadros", "Chaqueta corta con vaqueros rasgados", "Vestido abotonado con tacones", "Jersey abotonado con faldas", "Camiseta de manga larga con pantalones de cuero", "Kimono con un cinturón", "Sudadera con capucha con pantalones deportivos", "Blusa de algodón con vaqueros de mezclilla", "Mangas acampanadas con vaqueros ajustados", "Vestido abotonado con zapatillas", "Vestido de cuello en V con sandalias", "Mallas de estilo deportivo con sudadera", "Vestido de cuadros con medias", "Vestido de tirantes con una chaqueta vaquera", "Jersey de cuello de tortuga con una falda", "Camiseta con pantalones de pierna ancha", "Chaqueta bomber con botas", "Jersey de cuello vuelto con pantalones"]</div>
+<div data-json='["Casual T-shirt with jeans","Leather jacket and boots","Button-up shirt with khakis","Sweater and leggings","Blazer with dress pants","Flannel shirt and denim jeans","Hoodie with sweatpants","Maxi dress with sandals","Polo shirt with shorts","Tank top and skirt","V-neck sweater with jeans","Cargo pants with a graphic tee","Leather boots with a dress","Blouse with a pencil skirt","Oversized sweater with skinny jeans","Cropped top with high-waisted jeans","Puffer jacket and joggers","Bomber jacket with a hoodie","Plaid shirt with distressed jeans","Peacoat with wool scarf","Trench coat and boots","Chinos with a casual button-up shirt","Cardigan with a flowy skirt","Short-sleeve shirt with shorts","Linen shirt with chinos","Denim jacket and black pants","Athletic shorts with a sports bra","Long-sleeve blouse with pencil skirt","Turtleneck and corduroy pants","Jumpsuit with ankle boots","Puffer vest with jeans","Sweater dress with tights","Slip dress with a leather jacket","Ripped jeans with a band tee","Ruffled blouse with high-waisted shorts","Camo jacket with leggings","Kimono with a tank top","Leather skirt with a sweater","Off-shoulder top with jeans","Cropped hoodie with high-waisted shorts","Tunic top with leggings","Wrap dress with heels","Racerback tank with cargo pants","Blazer with a t-shirt and jeans","V-neck blouse with a skirt","Fitted blazer with black jeans","T-shirt with a maxi skirt","Striped sweater with denim shorts","Peasant top with skinny jeans","Blouse with flared jeans","Open cardigan with a tank top","Sweatshirt and cargo shorts","Pinafore dress with a t-shirt","Skater dress with ankle boots","Henley shirt with chinos","Floral dress with a denim jacket","T-shirt with overalls","Mini skirt with a graphic tee","Plaid skirt with a blouse","Fleece jacket and leggings","Sporty tank with running shorts","Lightweight jacket with joggers","Boho dress with sandals","Sweater vest with a blouse","Belted coat with skinny jeans","Denim shirt with a skirt","Mesh top with high-waisted pants","Crop top with a plaid skirt","Denim shorts with a tank top","V-neck sweater with cargo pants","Floral blouse with white jeans","Lace top with a mini skirt","Cardigan with skinny jeans","T-shirt with a pleated skirt","Fuzzy sweater with leggings","Peacoat with plaid scarf","Cropped jacket with ripped jeans","Button-up dress with heels","Buttoned-up sweater with skirts","Long-sleeve t-shirt with leather pants","Kimono with a belt","Hooded sweatshirt with joggers","Cotton blouse with denim jeans","Flared sleeves with skinny jeans","Button-up dress with sneakers","V-neck dress with sandals","Athleisure leggings with hoodie","Plaid dress with tights","Tank dress with a denim jacket","Turtleneck sweater with a skirt","T-shirt with wide-legged pants","Bomber jacket with boots","Cowl neck sweater with pants","Knitted cardigan with a skirt"]' data-translate-id="jsonData" data-translate-repeat="false" id="jsonData">["Camiseta informal con vaqueros", "Chaqueta de cuero y botas", "Camisa abotonada con khakis", "Jersey y mallas", "Americana con pantalones de vestir", "Camisa de franela y vaqueros de mezclilla", "Sudadera con pantalones deportivos", "Vestido maxi con sandalias", "Polo con pantalones cortos", "Top sin mangas y falda", "Jersey de cuello en V con vaqueros", "Pantalones cargo con camiseta gráfica", "Botas de cuero con un vestido", "Blusa con una falda lápiz", "Jersey extragrande con vaqueros ajustados", "Top corto con vaqueros de talle alto", "Chaqueta acolchada y pantalones deportivos", "Chaqueta bomber con una sudadera", "Camisa de franela con vaqueros desgastados", "Abrigo de lana con bufanda de lana", "Gabardina y botas", "Chinos con una camisa informal abotonada", "Cárdigan con una falda vaporosa", "Camisa de manga corta con pantalones cortos", "Camisa de lino con chinos", "Chaqueta vaquera y pantalones negros", "Pantalones cortos deportivos con un sujetador deportivo", "Blusa de manga larga con falda lápiz", "Cuello de tortuga y pantalones de pana", "Mono con botines", "Chaleco acolchado con vaqueros", "Vestido de suéter con medias", "Vestido de tirantes con una chaqueta de cuero", "Vaqueros rasgados con una camiseta de banda", "Blusa fruncida con pantalones cortos de talle alto", "Chaquetón de camuflaje con mallas", "Kimono con un top sin mangas", "Falda de cuero con un jersey", "Top de hombros descubiertos con vaqueros", "Sudadera corta con pantalones cortos de talle alto", "Top túnica con mallas", "Vestido cruzado con tacones", "Top de tirantes con pantalones cargo", "Blazer con una camiseta y vaqueros", "Blusa de cuello en V con una falda", "Blazer ajustado con vaqueros negros", "Camiseta con una falda maxi", "Jersey a rayas con pantalones cortos vaqueros", "Top campesino con vaqueros ajustados", "Blusa con vaqueros acampanados", "Cárdigan abierto con un top sin mangas", "Sudadera y pantalones cortos cargo", "Vestido de tirantes con una camiseta", "Vestido skater con botines", "Camisa Henley con chinos", "Vestido floral con una chaqueta vaquera", "Camiseta con peto", "Minifalda con una camiseta gráfica", "Falda de cuadros con una blusa", "Chaqueta de forro polar y mallas", "Top deportivo con pantalones cortos para correr", "Chaqueta ligera con pantalones deportivos", "Vestido boho con sandalias", "Chaleco de punto con una blusa", "Abrigo con cinturón con vaqueros ajustados", "Camisa vaquera con una falda", "Top de malla con pantalones de talle alto", "Top corto con una falda de cuadros", "Pantalones cortos vaqueros con un top sin mangas", "Jersey de cuello en V con pantalones cargo", "Blusa floral con vaqueros blancos", "Top de encaje con una minifalda", "Cárdigan con vaqueros ajustados", "Camiseta con una falda plisada", "Jersey esponjoso con mallas", "Abrigo de lana con bufanda de cuadros", "Chaqueta corta con vaqueros rasgados", "Vestido abotonado con tacones", "Jersey abotonado con faldas", "Camiseta de manga larga con pantalones de cuero", "Kimono con un cinturón", "Sudadera con capucha con pantalones deportivos", "Blusa de algodón con vaqueros de mezclilla", "Mangas acampanadas con vaqueros ajustados", "Vestido abotonado con zapatillas", "Vestido de cuello en V con sandalias", "Mallas de estilo deportivo con sudadera", "Vestido de cuadros con medias", "Vestido de tirantes con una chaqueta vaquera", "Jersey de cuello de tortuga con una falda", "Camiseta con pantalones de pierna ancha", "Chaqueta bomber con botas", "Jersey de cuello vuelto con pantalones"]</div>
 <!-------------json-data-end------>
 <!---footer start----->
 </main>
@@ -407,6 +436,33 @@
 </svg>
 <p class="font-inter ml-4 text-white text-left">support@randomgenerator.tools</p>
 </div>
+<div class="flex flex-col items-start ml-4 mt-4">
+<div class="relative inline-block text-left mt-2">
+<div>
+<button class="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-black text-sm font-medium text-white hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" onclick="toggleMenu('footer-language-menu')" type="button">
+                Language
+                <svg aria-hidden="true" class="-mr-1 ml-2 h-5 w-5" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" fill-rule="evenodd"></path>
+</svg>
+</button>
+</div>
+<div class="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-black ring-1 ring-white ring-opacity-5 focus:outline-none hidden" id="footer-language-menu">
+<div aria-labelledby="options-menu" aria-orientation="vertical" class="py-1" role="menu">
+<a class="block px-4 py-2 text-sm text-white hover:bg-gray-800 hover:text-white" href="/index.html" role="menuitem">English (英文)</a>
+<a class="block px-4 py-2 text-sm text-white hover:bg-gray-800 hover:text-white" href="/es/index.html" role="menuitem">Español (西班牙语)</a>
+<a class="block px-4 py-2 text-sm text-white hover:bg-gray-800 hover:text-white" href="/zh-cn/index.html" role="menuitem">中文 (简体)</a>
+<a class="block px-4 py-2 text-sm text-white hover:bg-gray-800 hover:text-white" href="/zh-tw/index.html" role="menuitem">中文 (繁体)</a>
+<a class="block px-4 py-2 text-sm text-white hover:bg-gray-800 hover:text-white" href="/fr/index.html" role="menuitem">Français (法语)</a>
+<a class="block px-4 py-2 text-sm text-white hover:bg-gray-800 hover:text-white" href="/de/index.html" role="menuitem">Deutsch (德语)</a>
+<a class="block px-4 py-2 text-sm text-white hover:bg-gray-800 hover:text-white" href="/ja/index.html" role="menuitem">日本語 (日语)</a>
+<a class="block px-4 py-2 text-sm text-white hover:bg-gray-800 hover:text-white" href="/ar/index.html" role="menuitem">العربية (阿拉伯语)</a>
+<a class="block px-4 py-2 text-sm text-white hover:bg-gray-800 hover:text-white" href="/pt/index.html" role="menuitem">Português (葡萄牙语)</a>
+<a class="block px-4 py-2 text-sm text-white hover:bg-gray-800 hover:text-white" href="/ko/index.html" role="menuitem">한국어 (韩语)</a>
+<a class="block px-4 py-2 text-sm text-white hover:bg-gray-800 hover:text-white" href="/ru/index.html" role="menuitem">Русский (俄语)</a>
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 <!-- DIVIDER -->
@@ -416,14 +472,18 @@
 <p class="font-inter text-center text-sm text-gray-400 lg:mt-0" data-translate-id="copyright" data-translate-repeat="true">© Copyright 2024. Todos los derechos reservados.</p>
 </div>
 </div>
-</footer> </footer>
+</footer>
+</footer>
 <script>
+        function toggleMenu(menuId) {
+            const menu = document.getElementById(menuId);
+            menu.classList.toggle('hidden');
+        }
+        const jsonDiv = document.getElementById('jsonData');
+       
+        const Groups1 = JSON.parse(jsonDiv.getAttribute('data-json'));
 
-       // const Groups1 = ["Casual T-shirt with jeans","Leather jacket and boots","Button-up shirt with khakis","Sweater and leggings","Blazer with dress pants","Flannel shirt and denim jeans","Hoodie with sweatpants","Maxi dress with sandals","Polo shirt with shorts","Tank top and skirt","V-neck sweater with jeans","Cargo pants with a graphic tee","Leather boots with a dress","Blouse with a pencil skirt","Oversized sweater with skinny jeans","Cropped top with high-waisted jeans","Puffer jacket and joggers","Bomber jacket with a hoodie","Plaid shirt with distressed jeans","Peacoat with wool scarf","Trench coat and boots","Chinos with a casual button-up shirt","Cardigan with a flowy skirt","Short-sleeve shirt with shorts","Linen shirt with chinos","Denim jacket and black pants","Athletic shorts with a sports bra","Long-sleeve blouse with pencil skirt","Turtleneck and corduroy pants","Jumpsuit with ankle boots","Puffer vest with jeans","Sweater dress with tights","Slip dress with a leather jacket","Ripped jeans with a band tee","Ruffled blouse with high-waisted shorts","Camo jacket with leggings","Kimono with a tank top","Leather skirt with a sweater","Off-shoulder top with jeans","Cropped hoodie with high-waisted shorts","Tunic top with leggings","Wrap dress with heels","Racerback tank with cargo pants","Blazer with a t-shirt and jeans","V-neck blouse with a skirt","Fitted blazer with black jeans","T-shirt with a maxi skirt","Striped sweater with denim shorts","Peasant top with skinny jeans","Blouse with flared jeans","Open cardigan with a tank top","Sweatshirt and cargo shorts","Pinafore dress with a t-shirt","Skater dress with ankle boots","Henley shirt with chinos","Floral dress with a denim jacket","T-shirt with overalls","Mini skirt with a graphic tee","Plaid skirt with a blouse","Fleece jacket and leggings","Sporty tank with running shorts","Lightweight jacket with joggers","Boho dress with sandals","Sweater vest with a blouse","Belted coat with skinny jeans","Denim shirt with a skirt","Mesh top with high-waisted pants","Crop top with a plaid skirt","Denim shorts with a tank top","V-neck sweater with cargo pants","Floral blouse with white jeans","Lace top with a mini skirt","Cardigan with skinny jeans","T-shirt with a pleated skirt","Fuzzy sweater with leggings","Peacoat with plaid scarf","Cropped jacket with ripped jeans","Button-up dress with heels","Buttoned-up sweater with skirts","Long-sleeve t-shirt with leather pants","Kimono with a belt","Hooded sweatshirt with joggers","Cotton blouse with denim jeans","Flared sleeves with skinny jeans","Button-up dress with sneakers","V-neck dress with sandals","Athleisure leggings with hoodie","Plaid dress with tights","Tank dress with a denim jacket","Turtleneck sweater with a skirt","T-shirt with wide-legged pants","Bomber jacket with boots","Cowl neck sweater with pants","Knitted cardigan with a skirt"];
-        var jsonDiv = document.getElementById('jsonData');
-        const Groups1  = jsonDiv.getAttribute('data-json');
-        console.log('Groups:', Groups1);
-
+        
     </script>
 <script src="/public/js/default_random_generate.js"></script>
 </footer></body>
