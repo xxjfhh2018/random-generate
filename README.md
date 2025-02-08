@@ -1,5 +1,36 @@
 # Random Generator Tools
 
+Welcome to [Random Generator Tools](https://randomgenerator.tools/), a website offering a variety of random generation tools designed to help users quickly generate various types of data, including but not limited to:
+
+- Random numbers
+- Random passwords
+- Random names
+- Random addresses
+- Random dates and times
+- And more...
+
+## Website Features
+
+This website provides a series of random generation tools, allowing users to choose different tools according to their needs. All generated data is completely random, and users can customize the generation rules and range. The website is simple and intuitive, making it easy for users to get started.
+
+### Main features include:
+
+- Random generation of numbers, passwords, names, etc.
+- Customizable generation rules and range
+- Generated results can be directly copied for use
+
+## Project Description
+
+This GitHub repository contains all the HTML source code for the [Random Generator Tools](https://randomgenerator.tools/) website. You are free to browse and modify these files.
+
+
+1. Clone or download this repository to your local machine:
+   ```bash
+   git clone [https://github.com/xxjfhh2018/randomgenerator-tools.git](https://github.com/xxjfhh2018/random-generate.git)
+   ```
+
+# Random Generator Tools
+
 欢迎访问 [Random Generator Tools](https://randomgenerator.tools/)，这是一个提供多种随机生成工具的网站，旨在帮助用户快速生成各种类型的数据，包括但不限于：
 
 - 随机数字
@@ -28,3 +59,4 @@
 1. 克隆或下载这个仓库到本地：
    ```bash
    git clone [https://github.com/xxjfhh2018/randomgenerator-tools.git](https://github.com/xxjfhh2018/random-generate.git)
+   ```
